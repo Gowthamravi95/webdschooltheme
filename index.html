@@ -22,6 +22,7 @@
    <link rel="stylesheet" href="assets/css/nice-select.css">
    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
    <link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/main.css">
 
@@ -62,7 +63,7 @@
          /* font-weight: 500; */
          /* color: #ef5e5e; */
          position: relative;
-         margin-bottom: 50px;
+         /* margin-bottom: 50px; */
       }
 
       .dmx_heading_wraper P {
@@ -173,7 +174,507 @@
          content: none;
       }
    </style>
+   <style>
+      .offer_wrapper {
+         width: 100%;
+         height: 100%;
+         padding: 100px 0;
+         padding-bottom: 70px;
+         background-color: white;
+      }
 
+      .offer_set_img img {
+         float: left;
+         width: 190px;
+      }
+
+      .offer_left_content_wrapper {
+         margin-bottom: 30px;
+      }
+
+      .offer_right_content_box {
+         float: left;
+         width: calc(100% - 190px);
+         padding-left: 30px;
+         padding-top: 5px;
+      }
+
+      .offer_right_content_box h1 a {
+         font-size: 20px;
+         text-transform: capitalize;
+         font-weight: 500;
+         padding-bottom: 20px;
+         display: block;
+      }
+
+      @media (max-width: 460px) {
+         .offer_set_img img {
+            width: 100%;
+         }
+
+         .offer_right_content_box {
+            padding-left: 0;
+            width: 100%;
+            padding-top: 25px;
+         }
+      }
+
+     
+   </style>
+   <style>
+
+.section-title-2 .title {
+    font-size: 47px;
+    line-height: 54px
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .section-title-2 .title {
+        font-size: 38px;
+        line-height: 45px
+    }
+}
+
+@media (max-width:767px) {
+    .section-title-2 .title {
+        font-size: 30px;
+        line-height: 30px
+    }
+}
+
+.section-title-2 .line {
+    width: 150px;
+    background: 0 0;
+    border: 1px solid #07294d;
+    margin-top: 25px;
+    display: block;
+}
+
+      .blog-area-2 {
+    position: relative;
+    padding-top: 112px;
+    z-index: 1
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .blog-area-2 {
+        padding-top: 90px
+    }
+}
+
+@media (max-width:767px) {
+    .blog-area-2 {
+        padding-top: 70px
+    }
+}
+
+.blog-area-2::before {
+    position: absolute;
+    content: '';
+    max-width: 1300px;
+    width: 100%;
+    height: 60%;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 150px;
+    z-index: -1
+}
+
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+    .blog-area-2::before {
+        left: 0
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .blog-area-2::before {
+        left: 0
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .blog-area-2::before {
+        left: 0
+    }
+}
+
+@media (max-width:767px) {
+    .blog-area-2::before {
+        left: 0
+    }
+}
+
+.blog-area-2 .trending-title {
+    font-weight: 700;
+    font-size: 46px;
+    letter-spacing: .1em;
+    line-height: 24px;
+    color: #d5d5d5;
+    opacity: .46;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    top: 283px;
+    left: 35px
+}
+
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+    .blog-area-2 .trending-title {
+        top: 30px;
+        left: 15px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .blog-area-2 .trending-title {
+        top: 30px;
+        left: 15px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .blog-area-2 .trending-title {
+        display: none
+    }
+}
+
+@media (max-width:767px) {
+    .blog-area-2 .trending-title {
+        display: none
+    }
+}
+.blog-wrapper {
+    padding-top: 35px;
+    position: relative
+}
+.blog-wrapper .more-post {
+    position: absolute;
+    top: -35px;
+    right: 170px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #07294d;
+    border-bottom: 1px solid #707070
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .blog-wrapper .more-post {
+        right: 0
+    }
+}
+
+@media (max-width:767px) {
+    .blog-wrapper .more-post {
+        right: 0
+    }
+}
+
+@media (max-width:767px) {
+    .blog-wrapper .more-post {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 30px;
+        text-align: center
+    }
+}
+.row-wrapper {
+    margin-left: -12px;
+    margin-right: -12px
+}
+
+.row-wrapper .custom-col {
+    padding: 0 12px
+}
+.single-blog {
+    background-color: white;
+}
+
+.single-blog .blog-image {
+    overflow: hidden
+}
+
+.single-blog .blog-image a {
+    display: block
+}
+
+.single-blog .blog-image img {
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    width: 100%
+}
+
+.single-blog .blog-content {
+    padding: 25px
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .single-blog .blog-content {
+        padding: 15px
+    }
+}
+
+@media (max-width:767px) {
+    .single-blog .blog-content {
+        padding: 15px
+    }
+}
+
+.single-blog .blog-content .meta li {
+    display: inline-block;
+    position: relative
+}
+
+.single-blog .blog-content .meta li+li {
+    margin-left: 30px
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .single-blog .blog-content .meta li+li {
+        margin-left: 20px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .single-blog .blog-content .meta li+li {
+        margin-left: 20px
+    }
+}
+
+@media (max-width:767px) {
+    .single-blog .blog-content .meta li+li {
+        margin-left: 20px
+    }
+}
+
+.single-blog .blog-content .meta li+li::before {
+    position: absolute;
+    content: '-';
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -18px;
+    font-size: 16px
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .single-blog .blog-content .meta li+li::before {
+        left: -13px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .single-blog .blog-content .meta li+li::before {
+        left: -13px
+    }
+}
+
+@media (max-width:767px) {
+    .single-blog .blog-content .meta li+li::before {
+        left: -13px
+    }
+}
+
+.single-blog .blog-content .meta li a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #151515;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .single-blog .blog-content .meta li a {
+        font-size: 12px
+    }
+}
+
+@media (max-width:767px) {
+    .single-blog .blog-content .meta li a {
+        font-size: 12px
+    }
+}
+
+.single-blog .blog-content .meta li a:hover {
+    color: #0c8b51
+}
+
+.single-blog .blog-content .blog-title a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    color: #07294d;
+    margin-top: 10px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .single-blog .blog-content .blog-title a {
+        font-size: 18px;
+        line-height: 28px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .single-blog .blog-content .blog-title a {
+        font-size: 20px;
+        line-height: 28px
+    }
+}
+
+@media (max-width:767px) {
+    .single-blog .blog-content .blog-title a {
+        font-size: 18px;
+        line-height: 28px
+    }
+}
+
+.single-blog .blog-content .blog-title a:hover {
+    color: #0c8b51
+}
+
+.single-blog .blog-content .more {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .02em;
+    line-height: 24px;
+    color: #151515;
+    margin-top: 15px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .single-blog .blog-content .more {
+        font-size: 13px
+    }
+}
+
+@media (max-width:767px) {
+    .single-blog .blog-content .more {
+        font-size: 14px
+    }
+}
+
+.single-blog .blog-content .more i {
+    margin-left: 3px;
+    font-size: 12px
+}
+
+.single-blog .blog-content .more:hover {
+    color: #0c8b51
+}
+
+.single-blog:hover .blog-image {
+    overflow: hidden
+}
+
+.single-blog:hover .blog-image img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.date-post {
+	float: left;
+	border: 2px solid #ffaa30;
+	padding: 12px 10px 9px;
+	text-align: center;
+}
+
+.date-post span {
+	display: block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #ffaa30;
+	text-transform: uppercase;
+}
+
+.date-post span.numb {
+	font-size: 30px;
+}
+ .date-post {
+	padding-bottom: 6px;
+}
+
+ .date-post span.numb {
+	margin-bottom: 5px;
+}
+.content-post {
+	margin-top: -7px;
+	line-height: 22px;
+}
+.content-post .entry-content {
+	margin-bottom: 30px;
+}
+.content-post .entry-content:before {
+	bottom: -17px;
+}
+ .content-post .title-post {
+	padding: 0 15px 0 80px;
+	margin-bottom: 12px;
+    line-height: 18px;
+}
+ .content-post .title-post a {
+	font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333;
+}
+
+
+.content-post .entry-content {
+	position: relative;
+	margin-bottom: 26px;
+}
+
+.content-post .entry-content:before {
+	position: absolute;
+	left: 0;
+	bottom: -13px;
+	width: 30px;
+	height: 2px;
+	content: "";
+	background-color: #333;
+}
+
+   </style>
 
 </head>
 
@@ -470,81 +971,79 @@
                         </div>
                         <div class="features__content">
                            <h3 class="features__title">
-                              <a href="about.html">Graduation</a>
+                              <a href="about.html">Profile</a>
                            </h3>
-                           <p>Euucal University was established it is recognized.</p>
+                           <p>Final Portfolio Development Assistance.</p>
 
-                           <a href="about.html" class="link-btn">Learn More <i
-                                 class="fa-regular fa-arrow-right"></i></a>
+                          
                         </div>
                      </div>
                   </div>
                   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                      <div class="features__item features__border-right d-sm-flex align-items-start white-bg mb-30">
                         <div class="features__icon mr-25">
-                           <svg width="44" height="40" viewBox="0 0 44 40" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.7168 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M14.3835 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M22.0501 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M29.7168 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M37.3835 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                              <path
-                                 d="M41.2168 39.1608H2.88347V33.4108C2.88347 32.3566 3.74597 31.4941 4.80014 31.4941H39.3001C40.3543 31.4941 41.2168 32.3566 41.2168 33.4108V39.1608Z"
-                                 stroke="#031220" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                              <path
-                                 d="M22.7593 1.115L40.0093 8.01495C40.6801 8.28329 41.2168 9.08827 41.2168 9.79744V16.1608C41.2168 17.215 40.3543 18.0775 39.3001 18.0775H4.80014C3.74597 18.0775 2.88347 17.215 2.88347 16.1608V9.79744C2.88347 9.08827 3.42014 8.28329 4.09098 8.01495L21.341 1.115C21.7243 0.961667 22.376 0.961667 22.7593 1.115Z"
-                                 stroke="#031220" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                              <path d="M0.966797 39.1608H43.1335" stroke="#031220" stroke-width="1.5"
-                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                              <path
-                                 d="M22.0501 13.2858C23.6379 13.2858 24.9251 11.9986 24.9251 10.4108C24.9251 8.82295 23.6379 7.53577 22.0501 7.53577C20.4623 7.53577 19.1751 8.82295 19.1751 10.4108C19.1751 11.9986 20.4623 13.2858 22.0501 13.2858Z"
-                                 stroke="#031220" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                           </svg>
+                           <svg width="41" height="38" viewBox="0 0 41 38" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M39.3333 27.9821V4.84788C39.3333 2.54788 37.455 0.84205 35.1742 1.03372H35.0592C31.0342 1.37872 24.92 3.42955 21.5083 5.57622L21.1825 5.78705C20.6267 6.13205 19.7067 6.13205 19.1508 5.78705L18.6717 5.49955C15.26 3.37205 9.165 1.34038 5.14 1.01455C2.85917 0.822883 1 2.54788 1 4.82872V27.9821C1 29.8221 2.495 31.547 4.335 31.777L4.89083 31.8537C9.05 32.4096 15.4708 34.5179 19.1508 36.5304L19.2275 36.5687C19.745 36.8562 20.5692 36.8562 21.0675 36.5687C24.7475 34.537 31.1875 32.4096 35.3658 31.8537L35.9983 31.777C37.8383 31.547 39.3333 29.8221 39.3333 27.9821Z"
+                              stroke="#031220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M20.1666 6.41956V35.1696" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M12.0209 12.1696H7.70837" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M13.4584 17.9196H7.70837" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                         </div>
                         <div class="features__content">
                            <h3 class="features__title">
-                              <a href="about.html">University Life</a>
+                              <a href="about.html">Works</a>
                            </h3>
-                           <p>Euucal University was established it is recognized.</p>
+                           <p>Regular Assignments & Assessments.</p>
 
-                           <a href="about.html" class="link-btn">Learn More <i
-                                 class="fa-regular fa-arrow-right"></i></a>
+                          
                         </div>
                      </div>
                   </div>
                   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                      <div class="features__item d-sm-flex align-items-start white-bg mb-30">
                         <div class="features__icon mr-25">
-                           <svg width="41" height="38" viewBox="0 0 41 38" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                 d="M39.3333 27.9821V4.84788C39.3333 2.54788 37.455 0.84205 35.1742 1.03372H35.0592C31.0342 1.37872 24.92 3.42955 21.5083 5.57622L21.1825 5.78705C20.6267 6.13205 19.7067 6.13205 19.1508 5.78705L18.6717 5.49955C15.26 3.37205 9.165 1.34038 5.14 1.01455C2.85917 0.822883 1 2.54788 1 4.82872V27.9821C1 29.8221 2.495 31.547 4.335 31.777L4.89083 31.8537C9.05 32.4096 15.4708 34.5179 19.1508 36.5304L19.2275 36.5687C19.745 36.8562 20.5692 36.8562 21.0675 36.5687C24.7475 34.537 31.1875 32.4096 35.3658 31.8537L35.9983 31.777C37.8383 31.547 39.3333 29.8221 39.3333 27.9821Z"
-                                 stroke="#031220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M20.1666 6.41956V35.1696" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M12.0209 12.1696H7.70837" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M13.4584 17.9196H7.70837" stroke="#3D6CE7" stroke-width="1.5"
-                                 stroke-linecap="round" stroke-linejoin="round" />
-                           </svg>
+                           <svg width="44" height="40" viewBox="0 0 44 40" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path d="M6.7168 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M14.3835 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M22.0501 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M29.7168 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                           <path d="M37.3835 31.4941V18.0775" stroke="#3D6CE7" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                           <path
+                              d="M41.2168 39.1608H2.88347V33.4108C2.88347 32.3566 3.74597 31.4941 4.80014 31.4941H39.3001C40.3543 31.4941 41.2168 32.3566 41.2168 33.4108V39.1608Z"
+                              stroke="#031220" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                           <path
+                              d="M22.7593 1.115L40.0093 8.01495C40.6801 8.28329 41.2168 9.08827 41.2168 9.79744V16.1608C41.2168 17.215 40.3543 18.0775 39.3001 18.0775H4.80014C3.74597 18.0775 2.88347 17.215 2.88347 16.1608V9.79744C2.88347 9.08827 3.42014 8.28329 4.09098 8.01495L21.341 1.115C21.7243 0.961667 22.376 0.961667 22.7593 1.115Z"
+                              stroke="#031220" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                           <path d="M0.966797 39.1608H43.1335" stroke="#031220" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                           <path
+                              d="M22.0501 13.2858C23.6379 13.2858 24.9251 11.9986 24.9251 10.4108C24.9251 8.82295 23.6379 7.53577 22.0501 7.53577C20.4623 7.53577 19.1751 8.82295 19.1751 10.4108C19.1751 11.9986 20.4623 13.2858 22.0501 13.2858Z"
+                              stroke="#031220" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        </svg>
+                           
                         </div>
                         <div class="features__content">
                            <h3 class="features__title">
-                              <a href="about.html">Education Services</a>
+                              <a href="about.html">Job</a>
                            </h3>
-                           <p>Euucal University was established it is recognized.</p>
+                           <p>100% Placement Assistance.</p>
 
-                           <a href="about.html" class="link-btn">Learn More <i
-                                 class="fa-regular fa-arrow-right"></i></a>
+                          
                         </div>
                      </div>
                   </div>
@@ -1876,7 +2375,6 @@
       <!-- web d school video start  -->
 
       <div class="video_wrapper dm_cover pb-90">
-         <!-- <div class="video_overlay"></div> -->
          <div class="container">
             <div class="row">
                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
@@ -1956,7 +2454,6 @@
       </div>
 
       <!-- web d school video end  -->
-      <p>&nbsp;</p>
 
       <!-- team area start -->
       <section class="team__area pt-115">
@@ -2459,13 +2956,197 @@
       </section>
       <!-- testimonial area end -->
 
+ 
+    <!--====== Blog Start ======-->
+
+    <section class="blog-area-2">
+      <h4 class="trending-title">Trending blogs</h4>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-5">
+                  <div class="section-title-2">
+                      <h2 class="title">Explore top Post</h2>
+                      <span class="line"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="blog-wrapper">
+              <div class="row-wrapper blog-active">
+                  <div class="custom-col">
+                      <div class="single-blog mt-30">
+                          <div class="blog-image">
+                              <a href="blog-details.html">
+                                  <img src="assets/img/blog/Blog-01.jpg" width="370" height="250" alt="blog" style="height: auto;">
+                              </a>
+                          </div>
+                          <div class="blog-content">
+                           <div class="date-post">
+                              <span class="numb">18</span>
+                              <span>May</span>
+                          </div>
+                          <div class="content-post">
+                              <h2 class="title-post">
+                                  <a href="flat-information.html">Ultimate Guide to Understanding Role of a UX Designer</a>
+                              </h2>
+                              <div class="entry-content">
+                                  <p>UX designers are hired to design a new product or enhance its usability. The designer’s job is…</p>
+                              </div>
+                              <div class="entry-meta style1">
+                              <p style="margin-bottom: 0px;">Posted in : Hobbies</p>
+                              <p>Tags : church, educate</p>
+                              </div>
+                              <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
+
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="custom-col">
+                      <div class="single-blog mt-30">
+                          <div class="blog-image">
+                              <a href="blog-details.html">
+                                  <img src="assets/img/blog/Blog-02.jpg" width="370" height="250" alt="blog" style="height: auto;">
+                              </a>
+                          </div>
+                          <div class="blog-content">
+                           <div class="date-post">
+                              <span class="numb">25</span>
+                              <span>June</span>
+                          </div>
+                          <div class="content-post">
+                              <h2 class="title-post">
+                                  <a href="flat-information.html">The Importance of Featured Snippets & 8 Ways to get them</a>
+                              </h2>
+                              <div class="entry-content">
+                                  <p>As regular Google Search users, we know that Google is constantly working to enhance its search results…</p>
+                              </div>
+                              <div class="entry-meta style1">
+                              <p style="margin-bottom: 0px;">Posted in : Hobbies</p>
+                              <p>Tags : church, educate</p>
+                              </div>
+                              <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
+
+                          </div>
+                          </div>
+
+
+                      </div>
+                  </div>
+                  <div class="custom-col">
+                      <div class="single-blog mt-30">
+                          <div class="blog-image">
+                              <a href="blog-details.html">
+                                  <img src="assets/img/blog/Blog-03.jpg" width="370" height="250" alt="blog" style="height: auto;">
+                              </a>
+                          </div>
+                          <div class="blog-content">
+                           <div class="date-post">
+                              <span class="numb">09</span>
+                              <span>OCT</span>
+                          </div>
+                          <div class="content-post">
+                              <h2 class="title-post">
+                                  <a href="flat-information.html">12 Best Zero-Budget Digital Marketing Strategies</a>
+                              </h2>
+                              <div class="entry-content">
+                                  <p>Nowadays, a Digital Marketing Strategy is at the center of every marketing department in almost all the…</p>
+                              </div>
+                              <div class="entry-meta style1">
+                              <p style="margin-bottom: 0px;">Posted in : Hobbies</p>
+                              <p>Tags : church, educate</p>
+                              </div>
+                              <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
+
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a href="blog-left-sidebar.html" class="more-post">45+ more post</a>
+          </div>
+      </div>
+  </section>
+
+  <!--====== Blog Ends ======-->
+  
+      <!-- offer wrapper start-->
+      <div class="offer_wrapper dm_cover ">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                  <div class="dmx_heading_wraper">
+                     <h2>Placement Support</h2>
+                     <br>
+                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                        <br> bibendum auctor, nisi elit consequat.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="offer_content_wrapper dm_cover">
+                     <div class="offer_left_content_wrapper dm_cover">
+                        <div class="offer_set_img">
+                           <img src="./assets/img/placement support/ps1.png" alt="img" class="img-responsive">
+                        </div>
+                        <div class="offer_right_content_box">
+                           <h1><a href=""> S.O.A.P (Student Output Assessment Program)
+                              </a></h1>
+                           <p>Throughout the course, our students would be assigned a specific number of tasks to
+                              be completed, which would be assessed to provide constructive feedback to them.</p>
+                        </div>
+                     </div>
+                     <div class="offer_left_content_wrapper dm_cover">
+                        <div class="offer_set_img">
+                           <img src="./assets/img/placement support/ps2.png" alt="img" class="img-responsive">
+                        </div>
+                        <div class="offer_right_content_box">
+                           <h1><a href="">Final Portfolio Development</a></h1>
+                           <p>Most companies insist on seeing the student’s final portfolio before calling them for
+                              an interview; so we assist our students in creating a good quality portfolio.</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="offer_content_wrapper dm_cover">
+                     <div class="offer_left_content_wrapper dm_cover">
+                        <div class="offer_set_img">
+                           <img src="./assets/img/placement support/ps3.png" alt="img" class="img-responsive">
+                        </div>
+                        <div class="offer_right_content_box">
+                           <h1><a href=""> Exclusive Job Portal</a></h1>
+                           <p>We have an exclusive Job portal integrated in our site, which our placement team will
+                              update regularly with current openings in the market. This feature has helped not
+                              just our fresh batches, but also our alumni students. </p>
+                        </div>
+                     </div>
+                     <div class="offer_left_content_wrapper dm_cover">
+                        <div class="offer_set_img">
+                           <img src="./assets/img/placement support/ps4.png" alt="img" class="img-responsive">
+                        </div>
+                        <div class="offer_right_content_box">
+                           <h1><a href=""> Interview Scheduling
+                              </a></h1>
+                           <p>Once our students complete all their assignments in S.O.A.P & his/her final
+                              portfolio, we would start the process of scheduling interviews for them in the
+                              companies that have shared their openings with us.</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
 
 
    </main>
 
    <!-- footer area start -->
-   <footer>
-      <div class="footer__area">
+   <footer >
+      <div class="footer__area" >
          <div class="footer__top grey-bg-4 pt-95 pb-45">
             <div class="container">
                <div class="row">
@@ -2589,8 +3270,55 @@
    </footer>
    <!-- footer area end -->
 
+
+
+<!-- <script>
+      $(document).ready(function(){
+         $(".tp-btn-green").click(function(){
+            alert("dzsfkj");
+
+         })
+         
+         var moretext = `Read More<i class="fa-solid fa-angle-down"></i>`;
+         var lesstext = `Read Less<i class="fa-solid fa-angle-up"></i>`;
+         $('.more').each(function () {
+
+
+            let h = $(this).height();
+
+            if (h == 120) {
+               $(this).after('<div><a href="" class="morelink">' + moretext + '</a></div>');
+
+            } else {
+               $(this).addClass('nobefore');
+            }
+
+         });
+
+         $(".morelink").click(function () {
+            if ($(this).hasClass("less")) {
+               $(this).removeClass("less");
+               $(this).html(moretext);
+
+            } else {
+               $(this).addClass("less");
+               $(this).html(lesstext);
+
+            }
+            $(this).parent().prev().toggleClass('moreStyle nobefore');
+            return false;
+         });
+
+         
+      })
+</script> -->
+
+
+
+
    <!-- JS here -->
    <script src="assets/js/vendor/jquery.js"></script>
+
    <script src="assets/js/vendor/waypoints.js"></script>
    <script src="assets/js/bootstrap-bundle.js"></script>
    <script src="assets/js/meanmenu.js"></script>
@@ -2605,46 +3333,20 @@
    <script src="assets/js/isotope-pkgd.js"></script>
    <script src="assets/js/imagesloaded-pkgd.js"></script>
    <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/slick.min.js"></script>
+
    <script src="assets/js/main.js"></script>
+   <script src="assets/js/client.js"></script>
+
    <script>
 
-console.log("working");
 
 
-      // $(document).ready(function () {
-      //    console.log("working");
+      $(document).ready(function () {
+         console.log("working");
 
 
-      //    var moretext = `Read More<i class="fa-solid fa-angle-down"></i>`;
-      //    var lesstext = `Read Less<i class="fa-solid fa-angle-up"></i>`;
-      //    $('.more').each(function () {
-
-
-      //       let h = $(this).height();
-
-      //       if (h == 120) {
-      //          $(this).after('<div><a href="" class="morelink">' + moretext + '</a></div>');
-
-      //       } else {
-      //          $(this).addClass('nobefore');
-      //       }
-
-      //    });
-
-      //    $(".morelink").click(function () {
-      //       if ($(this).hasClass("less")) {
-      //          $(this).removeClass("less");
-      //          $(this).html(moretext);
-
-      //       } else {
-      //          $(this).addClass("less");
-      //          $(this).html(lesstext);
-
-      //       }
-      //       $(this).parent().prev().toggleClass('moreStyle nobefore');
-      //       return false;
-      //    });
-      // })
+      })
 
    </script>
 
