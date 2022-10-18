@@ -675,6 +675,56 @@
 }
 
    </style>
+   <style>
+      a.morelink i {
+          color: lightskyblue;
+          position: relative;
+          top: 1px;
+          left: 5px;
+      }
+
+      a.morelink {
+          text-decoration: none;
+          outline: none;
+          color: lightskyblue;
+          cursor: pointer;
+          line-height: 1.7;
+          font-size: 17px;
+          white-space: nowrap;
+      }
+
+      .morecontent span {
+          display: none;
+      }
+
+
+      /* css prorperties for height wise function  */
+      .readmore {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-height: 330px;
+          position: relative;
+      }
+
+      .readmore:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 50px;
+          background: linear-gradient(to top, #fff, transparent);
+      }
+
+      .moreStyle {
+          overflow: none;
+          max-height: 1000px;
+
+      }
+
+      .readmore.nobefore::before {
+          display: none;
+      }
+  </style>
 
 </head>
 
@@ -2327,8 +2377,8 @@
                            Unique</h2>
                      </div>
 
-                     <div class="more moreStyle nobefore" bis_skin_checked="1">
-                        <p style="text-indent: 20px;">Web D School has been operational from the year 2014 &amp; we have
+                     <div class="readmore" bis_skin_checked="1">
+                        <p  style="text-indent: 20px;">Web D School has been operational from the year 2014 &amp; we have
                            been conducting
                            courses
                            like UX UI Designing, Web Designing, Graphic Designing, Digital Marketing, Android
@@ -2620,8 +2670,8 @@
                            data-background="assets/img/research/2/research-bg.jpg"></div>
                         <div class="research__content-2 p-relative z-index-1">
                            <h3 class="research__title-2"
-                              style="color: white; font-family: 'Black Ops One', cursive;font-size: 30px;line-height: 40px;">
-                              “Become a free spirit”</h3>
+                              style="font-size: 34px;line-height: 40px;">
+                              Become a free spirit</h3>
 
                         </div>
                         <div class="research__thumb-2">
@@ -2690,8 +2740,8 @@
                            </span>
                         </div>
                         <div class="research__features-content">
-                           <h4>Let passion be your guide</h4>
-                           <p>Rather than focusing on money or other external factors, it is crucial to allow your passion to guide you in your career path and choose a job that truly inspires you.</p>
+                           <h4>Get trained by the best</h4>
+                           <p>Never compromise on the quality of your education, as this will inevitably impact your success in the end. Research well to find the best academic institution that can help you achieve your goals.</p>
                         </div>
                      </div>
                      <div class="research__features-item d-sm-flex align-items-start mb-40">
@@ -2715,8 +2765,8 @@
                            </span>
                         </div>
                         <div class="research__features-content">
-                           <h4>Keep learning</h4>
-                           <p>By doing so, you will acquire new skills and become an enormous talent indispensable to any team. With such expertise, you can stand firm in the face of change and truly become a free spirit.</p>
+                           <h4>Let passion be your guide</h4>
+                           <p>Rather than focusing on money or other external factors, it is crucial to allow your passion to guide you in your career path and choose a job that truly inspires you.</p>
                         </div>
                      </div>
                      <div class="research__features-item d-sm-flex align-items-start">
@@ -2730,11 +2780,8 @@
                            </span>
                         </div>
                         <div class="research__features-content">
-                           <h4>Keeping Things Simple</h4>
-                           <p>Lastly, We neither offer 10+ certifications nor have any associations
-                              with fancy names from the industry. But we know what is necessary for the aspiring
-                              students to start
-                              a solid career in their chosen field. And we offer only that.</p>
+                           <h4>Keep learning</h4>
+                           <p>By doing so, you will acquire new skills and become an enormous talent indispensable to any team. With such expertise, you can stand firm in the face of change and truly become a free spirit.</p>
                         </div>
                      </div>
                   </div>
@@ -3271,48 +3318,6 @@
 
 
 
-<!-- <script>
-      $(document).ready(function(){
-         $(".tp-btn-green").click(function(){
-            alert("dzsfkj");
-
-         })
-         
-         var moretext = `Read More<i class="fa-solid fa-angle-down"></i>`;
-         var lesstext = `Read Less<i class="fa-solid fa-angle-up"></i>`;
-         $('.more').each(function () {
-
-
-            let h = $(this).height();
-
-            if (h == 120) {
-               $(this).after('<div><a href="" class="morelink">' + moretext + '</a></div>');
-
-            } else {
-               $(this).addClass('nobefore');
-            }
-
-         });
-
-         $(".morelink").click(function () {
-            if ($(this).hasClass("less")) {
-               $(this).removeClass("less");
-               $(this).html(moretext);
-
-            } else {
-               $(this).addClass("less");
-               $(this).html(lesstext);
-
-            }
-            $(this).parent().prev().toggleClass('moreStyle nobefore');
-            return false;
-         });
-
-         
-      })
-</script> -->
-
-
 
 
    <!-- JS here -->
@@ -3337,17 +3342,44 @@
    <script src="assets/js/main.js"></script>
    <script src="assets/js/client.js"></script>
 
+
+
    <script>
+      $(document).ready(function(){
+       
+         var moretext = `Read More<i class="fa-solid fa-angle-down"></i>`;
+         var lesstext = `Read Less<i class="fa-solid fa-angle-up"></i>`;
+         $('.readmore').each(function () {
 
 
+            let h = $(this).height();
 
-      $(document).ready(function () {
-         console.log("working");
+            if (h == 330) {
+               $(this).after('<div><a href="" class="morelink">' + moretext + '</a></div>');
 
+            } else {
+               $(this).addClass('nobefore');
+            }
 
+         });
+
+         $(".morelink").click(function () {
+            if ($(this).hasClass("less")) {
+               $(this).removeClass("less");
+               $(this).html(moretext);
+
+            } else {
+               $(this).addClass("less");
+               $(this).html(lesstext);
+
+            }
+            $(this).parent().prev().toggleClass('moreStyle nobefore');
+            return false;
+         });
+
+         
       })
-
-   </script>
+</script>
 
 
 

@@ -100,8 +100,8 @@
     }
     &__thumb{
         position: absolute;
-        right: 45px;
-        bottom: -30px;
+        right: 20px;
+        bottom: 120px;
 
         @media #{$lg}{
             right: -20px;

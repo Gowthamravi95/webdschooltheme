@@ -6120,9 +6120,6 @@ input[type=color] {
   font-weight: 400;
   margin-bottom: 0;
 }
-.category__title a:hover {
-  color: var(--tp-theme-2);
-}
 .category__title.add {
   color: var(--tp-common-green-2);
 }
@@ -6854,8 +6851,8 @@ input[type=color] {
 }
 .certificate__thumb {
   position: absolute;
-  right: 45px;
-  bottom: -30px;
+  right: 20px;
+  bottom: 120px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .certificate__thumb {
