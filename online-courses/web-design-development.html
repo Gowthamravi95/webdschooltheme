@@ -24,7 +24,11 @@
    <link rel="stylesheet" href="../assets/css/spacing.css">
    <link rel="stylesheet" href="../assets/css/style.css">
    <link rel="stylesheet" href="../assets/css/main.css">
-
+<style>
+   .accordion-body p{
+      text-indent: 30px;
+   }
+</style>
 
    <style>
       a.morelink i {
@@ -221,7 +225,105 @@
       content: none;
    }
 </style>
+<style>
+   /*----------------------------------------*/
+/*  03. FEATURES CSS START
+/*----------------------------------------*/
 
+
+.theme__features-border-right {
+  border-right: 1px solid #dedfe6;
+}
+.theme__features-border-bottom {
+  border-bottom: 1px solid #dedfe6;
+}
+.theme__features-item {
+padding: 40px 30px 30px 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .theme__features-item {
+    border: none;
+    border-right: 1px solid #dedfe6;
+    border-bottom: 1px solid #dedfe6;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .theme__features-item {
+    border: none;
+    border-right: 1px solid #dedfe6;
+    border-bottom: 1px solid #dedfe6;
+  }
+}
+.theme__features-item:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border-color: #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(1, 11, 60, 0.08);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(1, 11, 60, 0.08);
+  box-shadow: 0px 20px 30px 0px rgba(1, 11, 60, 0.08);
+}
+.theme__features-item:hover .theme__features-icon span {
+  border-color: #ebedf3;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.theme__features-icon span {
+  display: inline-block;
+  width: 120px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  background: #ffffff;
+  border: 2px solid transparent;
+  overflow: hidden;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
+  -moz-box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
+  box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
+}
+.theme__features-icon span img {
+  width: 90px;
+}
+.theme__features-content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.theme__features-content span {
+  font-size: 15px;
+  color: #258E46;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@-webkit-keyframes hand-pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 white;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes hand-pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+</style>
 </head>
 
 <body>
@@ -641,7 +743,7 @@
 
       
          <!-- category area start -->
-         <section class="category__area pt-105 pb-70">
+         <section class="category__area ">
             <div class="container">
                <div class="row">
                   <div class="col-xxl-4 col-xl-4 col-lg-4">
@@ -1033,7 +1135,7 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-6">
+               <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-6">
                   <div
                      class="category__item-3 fix transition-3 white-bg mb-30 justify-content-center d-flex flex-column">
                      <h3 class="category__title-3 ">Photoshop</h3>
@@ -1045,9 +1147,8 @@
                         <ul>
                            <li><a href="">Web Templates </i></a></li>
                            <li><a href="">Social Media Ads</a></li>
-                           <li><a href="">Web Ads</a></li>
-                           <li><a href="">&nbsp;</a></li>
-                           <li><a href="">&nbsp;</a></li>
+                           <li class="pb-85"><a href="">Web Ads</a></li>
+                          
 
 
 
@@ -1055,7 +1156,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-6">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="category__item-3 fix transition-3 white-bg mb-30">
                      <h3 class="category__title-3">HTML/CSS</h3>
                      <div class="pl-15 pt-3">
@@ -1073,7 +1174,7 @@
 
                   </div>
                </div>
-               <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-6">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="category__item-3 fix transition-3 white-bg mb-30">
                      <h3 class="category__title-3">Bootstrap</h3>
                      <div class="pl-15 pt-3">
@@ -1083,17 +1184,15 @@
                         <ul>
                            <li><a href="">Mobile Screen Templates</a></li>
                            <li><a href="">Web Templates</a></li>
-                           <li><a href="">Resume Website</a></li>
-                           <li><a href="">&nbsp;</a></li>
-                           <li><a href="">&nbsp;</a></li>
-
+                           <li class="pb-85"><a href="">Resume Website</a></li>
+                          
                         </ul>
 
                      </div>
 
                   </div>
                </div>
-               <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-6">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="category__item-3 fix transition-3 white-bg mb-30">
                      <h3 class="category__title-3">Javascript/Jquery</h3>
                      <div class="pl-15 pt-3">
@@ -1111,7 +1210,7 @@
 
                   </div>
                </div>
-               <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-6">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="category__item-3 fix transition-3 white-bg mb-30">
                      <h3 class="category__title-3">ANGULAR/ REACT</h3>
                      <div class="pl-15 pt-3">
@@ -1121,15 +1220,15 @@
                         <ul>
                            <li><a href="">Creating Single Page Application</a></li>
                            <li><a href="">Implementing UI Components for Web &amp; Mobile App</a></li>
-                           <li class="pb-5"><a href="">Creating MVC Templates</a></li>
-                           <li class="pt-5 pb-5"> <a href="">&nbsp;</a></li>
+                           <li class="pb-60"><a href="">Creating MVC Templates</a></li>
+                           
 
                         </ul>
                      </div>
 
                   </div>
                </div>
-               <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-6">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="category__item-3 fix transition-3 white-bg mb-30">
                      <h3 class="category__title-3">Wordpress</h3>
                      <div class="pl-15 pt-3">
@@ -1139,9 +1238,8 @@
                         <ul>
                            <li><a href="">Hosting a Website</a></li>
                            <li><a href="">Customizing WP Theme</a></li>
-                           <li><a href="">Building a Website Using Plugins</a></li>
-                           <li><a href="">&nbsp;</a></li>
-                           <li><a href="">&nbsp;</a></li>
+                           <li class="pb-85"><a href="">Building a Website Using Plugins</a></li>
+                          
                         </ul>
 
                      </div>
@@ -1155,7 +1253,151 @@
       </section>
       <!-- category area end -->
 
+ <!-- theme features area start -->
+ <section class="theme__features pt-115 pb-120 grey-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-2">
 
+            <div class="section__title-wrapper mb-55 text-center">
+            <span class="section__title-pre-2">Hirer</span>
+
+               <h2 class="section__title">
+                  Actively hired
+               </h2>
+               <p>Our Webdians work in 100+ Companies. </p>
+            </div>
+         </div>
+      </div>
+      <div class="row gx-0">
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right theme__features-border-bottom">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/Amazon-Logo-500x313.png" alt="">
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right theme__features-border-bottom">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/wipro-tdop-2022-logo.svg.svg" alt="">
+                  </span>
+               </div>
+             
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right theme__features-border-bottom">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/zoho-logo.png" alt="">
+                  </span>
+               </div>
+              
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+            <div class="theme__features-item text-center transition-3 theme__features-border-bottom">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/logo.png" alt="">
+                  </span>
+               </div>
+           
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right theme__features-border-bottom">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/Sun_TV.png" alt="">
+                  </span>
+               </div>
+              
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right theme__features-border-bottom">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/images.png" alt="">
+                  </span>
+               </div>
+           
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 d-sm-block d-none" >
+            <div class="theme__features-item text-center transition-3 theme__features-border-right theme__features-border-bottom">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/AMATlogo-175w copy.png" alt="">
+                  </span>
+               </div>
+           
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 d-sm-block d-none">
+            <div class="theme__features-item text-center transition-3 theme__features-border-bottom ">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/logo-black-01-01-1.png" alt="">
+                  </span>
+               </div>
+           
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 d-sm-block d-none">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/Logo-RoofandFloor-TheHinduGroup_200x50.png" alt="">
+                  </span>
+               </div>
+            
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 d-md-block d-none">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right">
+               <div class="theme__features-icon">
+                  <span>
+                     <img src="../assets/img/brand/Prosmack.png" alt="">
+                  </span>
+               </div>
+           
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 d-md-block d-none">
+            <div class="theme__features-item text-center transition-3 theme__features-border-right">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/kutung.svg" alt="">
+                  </span>
+               </div>
+          
+            </div>
+         </div>
+         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 d-md-block d-none">
+            <div class="theme__features-item text-center transition-3 ">
+               <div class="theme__features-icon ">
+                  <span>
+                     <img src="../assets/img/brand/tcs-logo-tata-white-1x-dec2021.png" alt="">
+                  </span>
+               </div>
+          
+            </div>
+         </div>
+      </div>
+     <div class="row pt-30">
+      <div class=" category__btn text-center">
+         <a href="course-v1.html" class="tp-btn-5">View All</a>
+      </div>
+     </div>
+   </div>
+</section>
+<!-- theme features area end -->
    
       <!-- research area start -->
       <section class="research__area research__border grey-bg-3 pt-115 pb-90 p-relative z-index-1">
@@ -1168,8 +1410,8 @@
             <div class="row">
                <div class="col-xxl-12">
                   <div class="section__title-wrapper mb-50 text-center">
-                     <span class="section__title-pre">Discover Research</span>
-                     <h2 class="section__title section__title-44">Life Changing Research</h2>
+                     <span class="section__title-pre">Placement</span>
+                     <h2 class="section__title section__title-44">Recent Students Placements</h2>
                   </div>
                </div>
             </div>
@@ -1177,36 +1419,43 @@
                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="research__item research__item-border text-center mb-30 transition-3">
                      <div class="research__thumb mb-35">
-                        <img src="../assets/img/research/research-1.jpg" alt="">
+                        <img src="../assets/img/research/research-1.png" alt="">
                      </div>
                      <div class="research__content">
-                        <h3 class="research__title">Frontier Research</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa lorem
-                           aliqua.</p>
+                        <h3 class="research__title">Naveen</h3>
+                        <h6>Web Design & Development Course</h6>
+                        <p>Web Develpoer  @ Prosmack </p>
+                        <p> CTC-4.5L/annum</p>
                      </div>
                   </div>
                </div>
                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="research__item research__item-border active text-center mb-30 transition-3">
                      <div class="research__thumb mb-35">
-                        <img src="../assets/img/research/research-2.jpg" alt="">
+                        <img src="../assets/img/research/research-2.png" alt="">
                      </div>
                      <div class="research__content">
-                        <h3 class="research__title">Global Research</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa lorem
-                           aliqua.</p>
+                        <h3 class="research__title">Shyam Sundar</h3>
+                        <h6>Web Design & Development Course</h6>
+
+                        <p>React Developer @ TCS</p>
+                        <p> CTC-3.5L/annum</p>
+
                      </div>
                   </div>
                </div>
                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                   <div class="research__item text-center mb-30 transition-3">
                      <div class="research__thumb mb-35">
-                        <img src="../assets/img/research/research-3.jpg" alt="">
+                        <img src="../assets/img/research/research-3.png" alt="">
                      </div>
                      <div class="research__content">
-                        <h3 class="research__title">Public Engagement</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa lorem
-                           aliqua.</p>
+                        <h3 class="research__title">Anugraj</h3>
+                        <h6>Web Design & Development Course</h6>
+
+                        <p>Software Developer @ ZOHO</p>
+                        <p> CTC-5.5L/annum</p>
+
                      </div>
                   </div>
                </div>
@@ -1228,8 +1477,8 @@
             <div class="row">
                <div class="col-xxl-12">
                   <div class="section__title-wrapper mb-60 text-center">
-                     <span class="section__title-pre">Latest News</span>
-                     <h2 class="section__title section__title-44">The latest news from eduker</h2>
+                     <span class="section__title-pre">Latest Works</span>
+                     <h2 class="section__title section__title-44">The latest Works from Students</h2>
                   </div>
                </div>
             </div>
@@ -1237,13 +1486,13 @@
                <div class="col-xxl-6 col-xl-6">
                   <div
                      class="blog__item-float blog__item-float-overlay p-relative fix transition-3 mb-30 d-flex align-items-end">
-                     <div class="blog__thumb-bg w-img fix" data-background="../assets/img/blog/blog-1.jpg"></div>
+                     <div class="blog__thumb-bg w-img fix" data-background="../assets/img/blog/2.png"></div>
                      <div class="blog__content-float">
                         <div class="blog__tag-float mb-15">
-                           <a href="#">Uncategorized</a>
+                           <a href="#">Web Design And Develop</a>
                         </div>
                         <h3 class="blog__title-float">
-                           <a href="blog-details.html">Individual master Courses For degree students.</a>
+                           <a href="blog-details.html">Skater Page coded with Html,Css & Jquery.</a>
                         </h3>
                         <div class="blog__meta-float">
                            <ul>
@@ -1282,7 +1531,7 @@
                   <div class="blog__item mb-30 white-bg transition-3 mb-30">
                      <div class="blog__thumb w-img fix">
                         <a href="blog-details.html">
-                           <img src="../assets/img/blog/blog-2.jpg" alt="">
+                           <img src="../assets/img/blog/1.png" alt="">
                         </a>
                      </div>
                      <div class="blog__content">
@@ -1329,7 +1578,7 @@
                   <div class="blog__item mb-30 white-bg transition-3 mb-30">
                      <div class="blog__thumb w-img fix">
                         <a href="blog-details.html">
-                           <img src="../assets/img/blog/blog-3.jpg" alt="">
+                           <img src="../assets/img/blog/7.png" alt="">
                         </a>
                      </div>
                      <div class="blog__content">
@@ -1406,15 +1655,22 @@
                               <h2 class="accordion-header" id="faqOne">
                                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Who will view my content?
+                                    1) What is Web Design & Development?
                                  </button>
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
                                  data-bs-parent="#faqaccordion">
                                  <div class="accordion-body">
-                                    <p>Our authors are incredible storytellers driven by their passion for technology.
-                                       They blend their knowledge and enthusiasm to communicate concepts and demonstrate
+                                    <p>Web Design and Development is the process of constructing a website from
+                                       scratch & making it purposeful. it includes designing the interface , planning
+                                       the structure to enhance user experience, writing the code, and constantly
+                                       updating the site to keep its functionality smooth for the visitors.
                                     </p>
+                                    <p>
+                                       Websites form the digital identities of corporate brands. The appearance,
+                                       content, and design of the website create a huge impact in building the brand
+                                       image and brand popularity.
+                                       </p>
                                  </div>
                               </div>
                            </div>
@@ -1422,14 +1678,16 @@
                               <h2 class="accordion-header" id="faqTwo">
                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    How long it take to create a video course?
+                                    2) Why Web Design and Development?
                                  </button>
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
                                  data-bs-parent="#faqaccordion">
                                  <div class="accordion-body">
-                                    <p>Our authors are incredible storytellers driven by their passion for technology.
-                                       They blend their knowledge and enthusiasm to communicate concepts and demonstrate
+                                    <p>Our online web design and development course covers the following
+                                       topics under web design - information architecture , web graphics
+                                       design,website structure, User interface, Navigation ergonomics,
+                                       Website layout, Colours, Contrasts, Fonts, amongst other things.
                                     </p>
                                  </div>
                               </div>
@@ -1438,15 +1696,15 @@
                               <h2 class="accordion-header" id="faqThree">
                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                    What kind of support does Courselog provide?
+                                    3) Do I need prior
+                      programming knowledge for this online web design and development course?
                                  </button>
                               </h2>
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
                                  data-bs-parent="#faqaccordion">
                                  <div class="accordion-body">
-                                    <p>Our authors are incredible storytellers driven by their passion for technology.
-                                       They blend their knowledge and enthusiasm to communicate concepts and demonstrate
-                                    </p>
+                                    <p> No! Although that would make the process relatively easier for you, it is not a
+                                       requirement for our web design and development course. </p>
                                  </div>
                               </div>
                            </div>
@@ -1454,15 +1712,53 @@
                               <h2 class="accordion-header" id="faqFour">
                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    How to Change my Password easily?
+                                    4) What is the duration
+                                    of this online web design and development course?
                                  </button>
                               </h2>
                               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
                                  data-bs-parent="#faqaccordion">
                                  <div class="accordion-body">
-                                    <p>Our authors are incredible storytellers driven by their passion for technology.
-                                       They blend their knowledge and enthusiasm to communicate concepts and demonstrate
-                                    </p>
+                                    <p>The online course extends to four months, spread across 60 sessions of 90 minutes
+                                       each. </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="faqFive">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    5) What is the fee
+                                    charged for this online web design and development course?
+                                 </button>
+                              </h2>
+                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                                 data-bs-parent="#faqaccordion">
+                                 <div class="accordion-body">
+                                    <p>The
+                                       fee for the online web design and development course is Rs. 38500 (including
+                                       GST), in case of a single payment at the beginning. If the payment is to be made
+                                       in instalments, the full fee would amount to Rs. 43000 (including GST), the down
+                                       payment would be Rs 25000, and the balance would be paid in two EMIs in the
+                                       forthcoming months.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="faqSix">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    6) What if I miss few
+                                    online classes? Will compensation classes be offered for me?
+                                 </button>
+                              </h2>
+                              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                                 data-bs-parent="#faqaccordion">
+                                 <div class="accordion-body">
+                                    <p> You
+                                       will receive the recorded session videos for all your classes, including the
+                                       missed ones. You can try to learn from that, & can clear all your doubts in the
+                                       next live interactive class.</p>
                                  </div>
                               </div>
                            </div>
