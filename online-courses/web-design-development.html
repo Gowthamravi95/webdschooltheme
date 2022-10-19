@@ -226,6 +226,8 @@
    }
 </style>
 <style>
+
+
    /*----------------------------------------*/
 /*  03. FEATURES CSS START
 /*----------------------------------------*/
@@ -324,6 +326,51 @@ padding: 40px 30px 30px 30px;
   }
 }
 </style>
+
+<style>
+
+
+.form-heading {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #f66;
+    width: 100%;
+    padding: 15px 0
+}
+span.required {
+ font-size:13px;
+ color:#f66
+}
+ input, #selectcat
+{
+    width: 96%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#selectcat{
+   display: block;
+}
+.button-align-center {
+ text-align:center!important;
+ padding-bottom:20px;
+ padding-top:20px
+}
+
+.submit-large-button {
+ padding: 7px 130px;
+ background-color:#f66;
+}
+.submit-large-button:hover {
+ color: #f66 ;
+ background-color: white;
+}  
+</style>
+
+
+
+
+
 </head>
 
 <body>
@@ -881,8 +928,7 @@ padding: 40px 30px 30px 30px;
                         <div class="certificate__content">                      
                            <div class="section__title-wrapper mb-10">
                               <span class="section__title-pre-3">Online Certification</span>
-                              <h2 class="section__title section__title-44">ONLINE WEB DESIGN  <br>AND DEVELOP (FRONT
-                                 END)</h2>
+                              <h2 class="section__title section__title-44">Online Web Desgin & Developmet (Front End)</h2>
                            </div>
                        
                               <div class="readmore">
@@ -1115,6 +1161,293 @@ padding: 40px 30px 30px 30px;
       </section>
       <!-- counter area end -->
 
+
+         <!-- curriculam area start  -->
+         <section class="course__area ">
+
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-4  col-12">
+                        <div class="category__wrapper mb-30">
+                           <div class="section__title-wrapper-2">
+                              <span class="section__title-pre-2">Expansive Concepts</span>
+                              <h3 class="section__title-2 section__title-2-30">Online Web Desgin & Development Course Syllabus</h3>
+                           </div>
+                           <p>Our  Course Syllabus covers more concepts to students benfit</p>
+
+                          
+                              <div class="contact__info white-bg p-relative z-index-1">
+                             
+                                 <div class="contact__info-inner  " style="padding: 25px 20px !important; background-color: #f0f8f7;" >
+                                    <div class="contact-form-page-style">
+                                       <div class="form-heading">Download our course prospectus</div>
+                                       <p class="pt-5" style="padding-right: 0px; ">Hi, fill the form &amp; submit to receive our Prospectus containing all details such
+                                         as Course content, Batches, Fees, Placement etc in your mail</p>
+                                       <hr style="border-top: 2px solid #F66; margin-bottom: 0">
+                                       <br />
+                                       <form method="post" id="contactform" onSubmit="return validate();"
+                                         action="https://www.webdschool.com/contact-form.php">
+                                         <div class="cont-div">
+                                           <label class="contact-label" required>Name <span class="required">* </span></label>
+                                           <input placeholder="Enter your Name" name="username" type="text" class="span5 ie7-margin"
+                                             id="name_contact">
+                                         </div>
+                                         <div class="cont-div">
+                                           <label class="contact-label" required>Email <span class="required">* </span></label>
+                                           <input placeholder="Enter your Email" name="email" type="email" id="email_contact"
+                                             class="span5 ie7-margin">
+                                         </div>
+                                         <div class="cont-div">
+                                           <div class="span5 webview">
+                                             <label class="contact-label"  required>Course Mode<span class="required">* </span></label>
+                                             <select id="selectcat" name="categoryselected" class="span5 myList" required >
+                                               <option value="" class="rhth">Course Mode</option>
+                                               <option class="online" id="selectionone" value="online" style="text-align:left;color:black">Online
+                                                 Course</option>
+                                               <option class="offline" id="selectiontwo" value="offline" style="text-align:left;color:black">
+                                                 Offline Course</option>
+                                             </select>
+                                           </div>
+                                         </div>
+                                         <div class="cont-div">
+                                           <label class="contact-label">Select the Course <span class="required">* </span></label>
+                                           
+                                           <select id="selectprod" name="course" class="span5 myList selectors online" >
+                                             <option value="" class="test">Select the Course</option>
+                                             <option value="Online Graphic Design" class="selectors online">Graphic Design</option>
+                                             <option value="Online Web Design & Development" class="selectors online">Web Design & Development
+                                               (Front-end) </option>
+                                             <option value="Online UX UI Design" class="selectors online">UX UI Design</option>
+                                             <option value="Online Digital Marketing" class="selectors online">Digital Marketing</option>
+                                             <option value="" class="selectors online">Select the Course </option>
+                                             <option value="Designer Pro" class="selectors offline">Designer Pro</option>
+                                             <option value="Graphic Designing" class="selectors offline">Advanced Graphic Designing</option>
+                                             <option value="Web Design & Development" class="selectors offline">Web Design & Development
+                                               (Front-end/Full-stack) </option>
+                                             <option value="UX UI Design" class="selectors offline">UX UI Design</option>
+                                             <option value="Digital Marketing" class="selectors offline">Digital Marketing</option>
+                                             <option value="Film Editing" class="selectors offline">Film Editing</option>
+                                             <option value="" class="selectors offline">Select the Course</option>
+                                           </select>
+                                         </div>
+                                          
+                                         <br />
+                                         <div class="g-recaptcha" id="rcaptcha" data-sitekey="6Lc-msgaAAAAANXaJ0h11gHTi5zwNvPM79Jvl2oE"
+                                           data-callback="verifyCaptcha"></div>
+                                         <div id="g-recaptcha-error"></div>
+                                         <br />
+                                         <div class="cont-div button-align-center">
+                                           <input type="submit" name="sub" id="submit-contact" value="Submit"
+                                             class=" button_large submit-large-button">
+                                         </div>
+                                         <div>
+                           
+                                         </div>
+                                       </form>
+                                     </div>
+                                 </div>
+                              </div>
+                           
+                        </div>
+                     </div>
+                  
+                  <div class="course__curriculum col-xl-8 col-12" >
+                     <div class="accordion" id="course__accordion">
+                        <div class="accordion-item mb-20">
+                          <h2 class="accordion-header" id="course-01">
+                            <button class="accordion-button" style="background: #f0f8f7;" type="button" data-bs-toggle="collapse" data-bs-target="#course-01-content" aria-expanded="true" aria-controls="course-01-content">
+                              Web Designing - Photoshop, HTML5, CSS3,
+                              Javascript, JQuery, Bootstrap
+                            </button>
+                          </h2>
+                          <div id="course-01-content" class="accordion-collapse collapse show " aria-labelledby="course-01" data-bs-parent="#course__accordion">
+                            <div class="accordion-body">
+                              <div class="accordion" id="module__accordion">
+                                 <div class="accordion-item ">
+                                   <h2 class="accordion-header" id="module-01">
+                                     <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#module-01-content" aria-expanded="true" aria-controls="module-01-content">
+                                       <div class="course__curriculum-info">
+                                          <h3> <span>Module 1 :</span> Web Template Designing in Photoshop</h3>
+                                       </div>
+                                     </button>
+                                   </h2>
+                                   <div id="module-01-content" class="accordion-collapse collapse show" aria-labelledby="module-01" data-bs-parent="#module__accordion">
+                                     <div class="accordion-body">
+                                       <div class="course__curriculum-content d-sm-flex justify-content-between align-items-center">
+                                          <div class="course__curriculum-info pl-80">
+                                             <ul >
+                                                <li>Introdution to Photoshop</li>
+                                                <li>Photoshop Tools &amp; Layout Design
+                                                </li>
+                                                <li>Understanding Grid System</li>
+                                                <li>Understanding Various Design Layout
+                                                </li>
+                                                <li>Creating Layouts using Grid System
+                                                </li>
+                                                <li>Understanding Color Palette</li>
+                                                <li>Working with Styles</li>
+                                                <li>Slicing Layouts &amp; Preparing for HTML Conversion</li>
+                                              </ul>
+                                          </div>
+                                       </div>
+                                    
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="accordion-item ">
+                                    <h2 class="accordion-header" id="module-02">
+                                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#module-02-content" aria-expanded="true" aria-controls="module-02-content">
+                                        <div class="course__curriculum-info">
+                                           <h3> <span>Module 2 :</span> Web Concepts &amp; Terminologies</h3>
+                                        </div>
+                                      </button>
+                                    </h2>
+                                    <div id="module-02-content" class="accordion-collapse collapse " aria-labelledby="module-02" data-bs-parent="#module__accordion">
+                                      <div class="accordion-body">
+                                        <div class="course__curriculum-content d-sm-flex justify-content-between align-items-center">
+                                           <div class="course__curriculum-info pl-80">
+                                             <ul >
+                                                <li>HTML5 / CSS3 / JavaScript - Introduction to the Core
+                                                  Concepts
+                                                </li>
+                                                <li>Bootstrap / jQuery - Introduction to Frameworks</li>
+                                                <li>Whats New in HTML5?</li>
+                                                <li>HTML5 Doctype / HTML5 Document Structure
+                                                </li>
+                                                <li>Head Tag and Elements inside the Head Tag</li>
+                                                <li>Meta Tags &amp; What are they used for?</li>
+                                              </ul>
+                                           </div>
+                                        </div>
+                                     
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item ">
+                                    <h2 class="accordion-header" id="module-03">
+                                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#module-03-content" aria-expanded="true" aria-controls="module-03-content">
+                                        <div class="course__curriculum-info">
+                                           <h3> <span>Module 3 :</span>HTML Content / Media Tags</h3>
+                                        </div>
+                                      </button>
+                                    </h2>
+                                    <div id="module-03-content" class="accordion-collapse collapse " aria-labelledby="module-03" data-bs-parent="#module__accordion">
+                                      <div class="accordion-body">
+                                        <div class="course__curriculum-content d-sm-flex justify-content-between align-items-center">
+                                           <div class="course__curriculum-info pl-80">
+                                             <ul>
+                                                <li>Working with Basic Tags and Font Formatting Tags</li>
+                                                <li>Understanding Block Level Tags, Inline Tags &amp; Empty
+                                                  Tags
+                                                </li>
+                                                <li>Introduction to CSS3 / Types of CSS and Significance
+                                                </li>
+                                                <li>Heading Tags</li>
+                                                <li>Paragraph Tags &amp; Multiple Columns
+                                                </li>
+                                                <li>Adding Basic Styles using HTML Attributes and CSS Styles
+                                                </li>
+                                                <li>Inserting Images &amp; Image Attributes
+                                                </li>
+                                                <li>Working with Image Sprites</li>
+                                                <li>Working with Links &amp; Link Attributes / Link States
+                                                  using Pseudo Classes</li>
+                                              </ul>
+                                           </div>
+                                        </div>
+                                     
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item ">
+                                    <h2 class="accordion-header" id="module-02">
+                                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#module-04-content" aria-expanded="true" aria-controls="module-04-content">
+                                        <div class="course__curriculum-info">
+                                           <h3> <span>Module 4 :</span> Lists &amp; Tables</h3>
+                                        </div>
+                                      </button>
+                                    </h2>
+                                    <div id="module-04-content" class="accordion-collapse collapse " aria-labelledby="module-04" data-bs-parent="#module__accordion">
+                                      <div class="accordion-body">
+                                        <div class="course__curriculum-content d-sm-flex justify-content-between align-items-center">
+                                           <div class="course__curriculum-info pl-80">
+                                             <ul>
+                                                <li>Working with Lists &amp; List Attributes
+                                                </li>
+                                                <li>Understanding CSS Selector</li>
+                                                <li>Creating Navigation Bars using Lists
+                                                </li>
+                                                <li>Working with Tables &amp; Table Attributes
+                                                </li>
+                                              </ul>
+                                           </div>
+                                        </div>
+                                     
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item ">
+                                    <h2 class="accordion-header" id="module-05">
+                                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#module-05-content" aria-expanded="true" aria-controls="module-05-content">
+                                        <div class="course__curriculum-info">
+                                           <h3> <span>Module 5 :</span>Styling Block Elements</h3>
+                                        </div>
+                                      </button>
+                                    </h2>
+                                    <div id="module-05-content" class="accordion-collapse collapse " aria-labelledby="module-05" data-bs-parent="#module__accordion">
+                                      <div class="accordion-body">
+                                        <div class="course__curriculum-content d-sm-flex justify-content-between align-items-center">
+                                           <div class="course__curriculum-info pl-80">
+                                             <ul >
+                                                <li>Styling Div Blocks</li>
+                                                <li>Understanding Box Model - Margins / Paddings / Borders /
+                                                  Border-Radius / Outlines</li>
+                                                <li>Adding Box Shadows / Text Shadows
+                                                </li>
+                                                <li>Positioning Div Blocks &amp; HTML Elements</li>
+                                                <li>Adding Background Colors / Gradients / Background Images
+                                                </li>
+                                              </ul>
+                                           </div>
+                                        </div>
+                                     
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item ">
+                                    <h2 class="accordion-header" id="module-06">
+                                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#module-06-content" aria-expanded="true" aria-controls="module-06-content">
+                                        <div class="course__curriculum-info">
+                                           <h3> <span>Module 6 :</span>HTML5 Semantic Tags</h3>
+                                        </div>
+                                      </button>
+                                    </h2>
+                                    <div id="module-06-content" class="accordion-collapse collapse " aria-labelledby="module-06" data-bs-parent="#module__accordion">
+                                      <div class="accordion-body">
+                                        <div class="course__curriculum-content d-sm-flex justify-content-between align-items-center">
+                                           <div class="course__curriculum-info pl-80">
+                                             <ul>
+                                                <li>HTML5 Semantic Tags</li>
+                                              </ul>
+                                           </div>
+                                        </div>
+                                     
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- curriculam area end  -->
+
+
       <!-- category area start -->
       <section class="category__area pb-90 pt-115">
          <div class="container">
@@ -1252,6 +1585,47 @@ padding: 40px 30px 30px 30px;
          </div>
       </section>
       <!-- category area end -->
+
+      
+      <div class="course__enroll">
+         <div class="container">
+            <div class="row justify-content-center">
+             <div class="col-xxl-8 col-xl-8 col-lg-8">
+               <div class="  course__enroll-wrapper mt-40 mb-40 p-relative d-sm-flex align-items-center justify-content-between include-bg" data-background="../assets/img/course/bg/course-bg.png">
+                  <div class="course__enroll-icon">
+                     <span>
+                        <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g filter="url(#filter0_d_268_615)">
+                           <path d="M7.59649 15.161H11.2015V23.561C11.2015 25.521 12.2632 25.9177 13.5582 24.4477L22.3898 14.4144C23.4748 13.1894 23.0198 12.1744 21.3748 12.1744H17.7698V3.77435C17.7698 1.81435 16.7082 1.41769 15.4132 2.88769L6.58149 12.921C5.50816 14.1577 5.96316 15.161 7.59649 15.161Z" fill="white"/>
+                           </g>
+                           <defs>
+                           <filter id="filter0_d_268_615" x="2" y="2" width="24.9795" height="31.3354" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                           <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                           <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                           <feOffset dy="4"/>
+                           <feGaussianBlur stdDeviation="2"/>
+                           <feComposite in2="hardAlpha" operator="out"/>
+                           <feColorMatrix type="matrix" values="0 0 0 0 0.825 0 0 0 0 0.38207 0 0 0 0 0 0 0 0 0.5 0"/>
+                           <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_268_615"/>
+                           <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_268_615" result="shape"/>
+                           </filter>
+                           </defs>
+                           </svg>
+                     </span>
+                  </div>
+                  <div class="course__enroll-content">
+                     <p>Let Us Help</p>
+                     <h4>Finding Your Right Courses</h4>
+                  </div>
+                  <div class="course__enroll-btn pt-5">
+                     <a href="contact.html" class="tp-btn-5 tp-btn-11">Get started</a>
+                  </div>
+               </div>
+             </div>
+            </div>
+         </div>
+      </div>
+
 
  <!-- theme features area start -->
  <section class="theme__features pt-115 pb-120 grey-bg">
@@ -1465,6 +1839,7 @@ padding: 40px 30px 30px 30px;
       <!-- research area end -->
 
 
+
       <!-- blog area start -->
       <section class="blog__area pt-120 pb-85 p-relative">
          <div class="blog__shape">
@@ -1627,7 +2002,7 @@ padding: 40px 30px 30px 30px;
       <!-- blog area end -->
 
 
-
+      
 
       <!-- faq area start -->
       <section class="faq__area pt-20 pb-130">
@@ -1771,60 +2146,207 @@ padding: 40px 30px 30px 30px;
       </section>
       <!-- faq area end -->
 
-
-      <!-- cta area start -->
-      <section class="cta__area pb-120">
+      
+      <!-- testimonial area start -->
+      <section class="testimonial__area  pb-120 fix">
          <div class="container">
-            <div class="cta__inner">
-               <div class="row">
-                  <div class="col-xxl-6 col-xl-6 col-lg-6">
-                     <div class="cta__item cta__item-border pt-40 pb-15 d-sm-flex align-items-start pr-110">
-                        <div class="cta__icon mr-30">
-                           <span>
-                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M14.0801 0C8.84004 0 4.58002 4.26003 4.58002 9.50006C4.58002 14.6401 8.60004 18.8001 13.8401 18.9801C14.0001 18.9601 14.1601 18.9601 14.2801 18.9801C14.3201 18.9801 14.3401 18.9801 14.3801 18.9801C14.4001 18.9801 14.4001 18.9801 14.4201 18.9801C19.5401 18.8001 23.5601 14.6401 23.5801 9.50006C23.5801 4.26003 19.3201 0 14.0801 0Z"
-                                    fill="#192A88" />
-                                 <path
-                                    d="M24.2401 24.2998C18.6601 20.5798 9.56006 20.5798 3.94002 24.2998C1.40001 25.9998 0 28.2998 0 30.7598C0 33.2198 1.40001 35.4998 3.92002 37.1799C6.72004 39.0599 10.4001 39.9999 14.0801 39.9999C17.7601 39.9999 21.4401 39.0599 24.2401 37.1799C26.7602 35.4798 28.1602 33.1998 28.1602 30.7198C28.1402 28.2598 26.7602 25.9798 24.2401 24.2998Z"
-                                    fill="#192A88" />
-                                 <path
-                                    d="M35.0602 10.6802C35.3802 14.5603 32.6202 17.9603 28.8002 18.4203C28.7802 18.4203 28.7802 18.4203 28.7602 18.4203H28.7002C28.5802 18.4203 28.4602 18.4203 28.3602 18.4603C26.4202 18.5603 24.6402 17.9403 23.3002 16.8003C25.3602 14.9603 26.5402 12.2002 26.3002 9.20023C26.1602 7.58022 25.6002 6.10021 24.7602 4.8402C25.5202 4.4602 26.4002 4.2202 27.3002 4.1402C31.2202 3.8002 34.7202 6.72021 35.0602 10.6802Z"
-                                    fill="#FF7648" />
-                                 <path
-                                    d="M39.0602 29.1799C38.9002 31.1199 37.6602 32.7999 35.5802 33.9399C33.5802 35.0399 31.0602 35.5599 28.5602 35.4999C30.0002 34.1999 30.8402 32.5799 31.0002 30.8599C31.2002 28.3799 30.0202 25.9998 27.6601 24.0998C26.3201 23.0398 24.7601 22.1998 23.0601 21.5798C27.4801 20.2998 33.0402 21.1598 36.4602 23.9198C38.3002 25.3998 39.2402 27.2599 39.0602 29.1799Z"
-                                    fill="#FF7648" />
-                              </svg>
-                           </span>
-                        </div>
-                        <div class="cta__content">
-                           <h3 class="cta__title">Become an Instructor</h3>
-                           <p>Teach what you love. Learned gives you neccessary tools to become an instructor.</p>
-                           <a href="contact.html" class="tp-btn tp-btn-3">Start Teaching</a>
-                        </div>
-                     </div>
+            <div class="row">
+               <div class="col-xxl-12">
+                  <div class="section__title-wrapper-2 mb-40 text-center">
+                     <span class="section__title-pre-2">Testimonials</span>
+                     <h3 class="section__title-2">What our Webdians Say.</h3>
                   </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6">
-                     <div class="cta__item pl-85 pt-40 pb-15 d-sm-flex align-items-start">
-                        <div class="cta__icon mr-30">
-                           <span>
-                              <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M32.2575 29.977C33.5417 29.1336 35.2283 30.0536 35.2283 31.587V34.0595C35.2283 36.4936 33.3308 39.1003 31.05 39.867L24.9358 41.8986C23.8625 42.2628 22.1183 42.2628 21.0642 41.8986L14.95 39.867C12.65 39.1003 10.7717 36.4936 10.7717 34.0595V31.5678C10.7717 30.0536 12.4583 29.1336 13.7233 29.9578L17.6717 32.5261C19.1858 33.542 21.1025 34.0403 23.0192 34.0403C24.9358 34.0403 26.8525 33.542 28.3667 32.5261L32.2575 29.977Z"
-                                    fill="#FF7648" />
-                                 <path
-                                    d="M38.295 12.3817L26.8142 4.84924C24.7442 3.4884 21.3325 3.4884 19.2625 4.84924L7.72416 12.3817C4.02499 14.7776 4.02499 20.2017 7.72416 22.6167L10.7908 24.6101L19.2625 30.1301C21.3325 31.4909 24.7442 31.4909 26.8142 30.1301L35.2283 24.6101L37.8542 22.8851V28.7501C37.8542 29.5359 38.5058 30.1876 39.2917 30.1876C40.0775 30.1876 40.7292 29.5359 40.7292 28.7501V19.3201C41.4958 16.8476 40.71 13.9726 38.295 12.3817Z"
-                                    fill="#192A88" />
-                              </svg>
-                           </span>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xxl-12">
+                  <div class="testimonial__slider">
+                     <div class="testimonial__active owl-carousel">
+                        <div class="testimonial__item transition-3 text-center white-bg">
+                           <div class="testimonial__avater">
+                              <img src="../assets/img/testimonial/testimonial-1.jpg" alt="">
+                           </div>
+                           <div class="testimonial__text">
+                              <h4>EVANGELINE</h4>
+                              <p>I am pursuing my UX/UI course in WebD School. I found the best professional training
+                                 institute where I could enhance my skills, experience and knowledge with practical
+                                 guidance. I would recommend WebD School to those people who are looking for career
+                                 enhancement in their core.</p>
+                           </div>
+                           <div class="testimonial__avater-info mb-5">
+                              <h3>UX UI Design Course</h3>
+                              <span>UX Designer</span>
+                           </div>
+                           <div class="testimonial__rating">
+                              <ul>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                              </ul>
+                           </div>
                         </div>
-                        <div class="cta__content">
-                           <h3 class="cta__title">Apply for Admission</h3>
-                           <p>Course completed? Then its time apply the certificate Do it in simplesteps with Learned.
-                           </p>
-                           <a href="contact.html" class="tp-btn tp-btn-4">Apply Now</a>
+                        <div class="testimonial__item transition-3 text-center white-bg">
+                           <div class="testimonial__avater">
+                              <img src="../assets/img/testimonial/testimonial-2.jpg" alt="">
+                           </div>
+                           <div class="testimonial__text">
+                              <h4>Karthik Narayanan.K</h4>
+                              <p>I did a UX UI Design course here; at Web D School and ever since then, every day here
+                                 was all about
+                                 exponential learning and a lot of Brainstorming with the faculty. Everything
+                                 that we learn here is actually based on what the industry demands and a lot more.
+                                 So many workshops, seminars and competitions are held here which make us better
+                                 designers.
+                                 All the faculties here are so friendly and always ready to help and guide. Eventually,
+                                 this place became like a family to me. The best part here is the amount of exposure
+                                 they give.</p>
+                           </div>
+                           <div class="testimonial__avater-info mb-5">
+                              <h3>UX UI Desgin Course </h3>
+                              <span>UX UI Desginer @ Insoft INC.</span>
+                           </div>
+                           <div class="testimonial__rating">
+                              <ul>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="testimonial__item transition-3 text-center white-bg">
+                           <div class="testimonial__avater">
+                              <img src="../assets/img/testimonial/testimonial-3.jpg" alt="">
+                           </div>
+                           <div class="testimonial__text">
+                              <h4>Naveen</h4>
+                              <p>I Have completed premiere pro. Getting trained here was a tremendous experience,
+                                 and the trainers were too friendly. They Create opportunities on every
+                                 occasion for students to showcase their talents. I would like to thank
+                                 Web D School for giving me that Confidence.</p>
+                           </div>
+                           <div class="testimonial__avater-info mb-5">
+                              <h3>Video Editing Course</h3>
+                              <span>Video Editor @ Prosmack</span>
+                           </div>
+                           <div class="testimonial__rating">
+                              <ul>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="testimonial__item transition-3 text-center white-bg">
+                           <div class="testimonial__avater">
+                              <img src="../assets/img/testimonial/testimonial-5.jpg" alt="">
+                           </div>
+                           <div class="testimonial__text">
+                              <h4>ANANDA.P. SUGANANDAM</h4>
+                              <p>
+                                 I pursued UI UX design course at Web D School, the excellent institute where you can
+                                 learn things practically and explore new technology in design fields. Trainers at Web D
+                                 School are friendly and motivate us to attain our goals.</p>
+                           </div>
+                           <div class="testimonial__avater-info mb-5">
+                              <h3>UX UI Design Course</h3>
+                              <span>UX UI Desginer @ Pretech Cafe Tech</span>
+                           </div>
+                           <div class="testimonial__rating">
+                              <ul>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="testimonial__item transition-3 text-center white-bg">
+                           <div class="testimonial__avater">
+                              <img src="../assets/img/testimonial/testimonial-4.jpg" alt="">
+                           </div>
+                           <div class="testimonial__text">
+                              <h4>Kalanidhi</h4>
+                              <p>
+                                 It's a good place to learn more. The teaching staffs supports us
+                                 from the starting path
+                                 till the end path and clarify our doubts whenever we ask until we
+                                 get cleared. The
+                                 environment itself drags us to learn something new. They have
+                                 unlimited practical hours
+                                 for the students to involve much into the design. Overall its a good
+                                 institute to learn
+                                 what you interested than other centers.</p>
+                           </div>
+                           <div class="testimonial__avater-info mb-5">
+                              <h3>Editing Course</h3>
+                              <span>Editor @ Trickshot Studio</span>
+                           </div>
+                           <div class="testimonial__rating">
+                              <ul>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                 </li>
+                              </ul>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -1832,8 +2354,48 @@ padding: 40px 30px 30px 30px;
             </div>
          </div>
       </section>
-      <!-- cta area end -->
+      <!-- testimonial area end -->
 
+
+         <!-- app area start -->
+         <section class="app__area app__bg">
+            <div class="container">
+               <div class="app__inner theme-bg-3 p-relative fix">
+                  <div class="app__shape">
+                     <img class="app__shape-1" src="../assets/img/app/app-shape-1.png" alt="">
+                     <img class="app__shape-2" src="../assets/img/app/app-shape-2.png" alt="">
+                  </div>
+                  <div class="row align-items-center">
+                     <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <div class="app__wrapper p-relative z-index-1">
+                           <h3 class="app__title"> Start learning By Downloading Apps</h3>
+                        </div>
+                     </div>
+                     <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <div class="app__download p-relative z-index-1 d-sm-flex align-items-center justify-content-lg-end">
+                           <div class="app__item mr-15">
+                              <a href="#">
+                                 <span><img src="../assets/img/app/google-play.png" alt=""></span>
+                                 Google play
+
+
+
+
+                              </a>
+                           </div>
+                           <div class="app__item">
+                              <a href="#" class="active">
+                                 <span class="apple"><img src="../assets/img/app/apple.png" alt=""></span>
+                                 Apple Store
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- app area end -->
    </main>
 
    <!-- footer area start -->
