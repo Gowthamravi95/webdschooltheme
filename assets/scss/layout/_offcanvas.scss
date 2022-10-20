@@ -157,10 +157,10 @@
                     line-height: 42px;
                     text-align: center;
                     background: var(--tp-grey-1);
-                    color: var(--tp-theme-1);
+                    color: var(--tp-theme-2);
                     @include border-radius(5px);
                     &:hover{
-                        background: var(--tp-theme-1);
+                        background: var(--tp-theme-2);
                         color: var(--tp-common-white);
                     }
                 }

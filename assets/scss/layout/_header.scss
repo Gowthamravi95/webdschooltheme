@@ -5,6 +5,7 @@
 /*----------------------------------------*/
 
 .header{
+    
     &__transparent{
         position: fixed !important;
         left: 0;
@@ -317,12 +318,12 @@
 /* main menu css */
 
 .main-menu{
+
     @media #{$lg}{
         margin-left: 50px;
     }
     & ul{
         & li{
-            position: relative;
             list-style: none;
             display: inline-block;
             margin-right: 27px;
@@ -334,7 +335,6 @@
             }
 			&.has-dropdown{
 				& > a{
-                    position: relative;
                     &::after{
                         content: '\f107';
                         @include transform(translateY(1px));
@@ -350,8 +350,8 @@
 			& .submenu{
                 position: absolute;
                 top: 120%;
-                left: 0;
-                width: 200px;
+                width: 100%;
+                left: 0px;
                 padding: 17px 0;
                 padding-bottom: 15px;
                 background: var(--tp-common-white);
@@ -360,13 +360,20 @@
                 visibility: hidden;
                 opacity: 0;
                 z-index: 11;
-                border-top: 3px solid var(--tp-theme-1);
+                border-top: 3px solid var(--tp-theme-2);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 & li{
-                    display: block;
+                    height: 50px;
                     width: 100%;
 					margin: 0;
+                    text-align: center;
+                    line-height: 50px;
                     &.has-dropdown{
                         & > a{
+                            font-size: 12px !important;
                             &::after{
 								position: absolute;
 								top: 50%;
@@ -395,10 +402,11 @@
                         opacity: 0;
                     }
                     &:hover{
+                        background-color: #f5f6f8;
                         & > a{
-                            color: var(--tp-theme-1);
+                            // color: var(--tp-theme-2);
                             &::after{
-                                color:  var(--tp-theme-1);
+                                color:  var(--tp-theme-2);
                             }
                             &::before{
                                 left: 0;
@@ -416,7 +424,7 @@
             }
             &:hover{
 				& > a{
-					color: var(--tp-theme-1);
+					color: var(--tp-theme-2);
 					&::after{
 						color: var(--tp-theme-1);
 					}
@@ -602,5 +610,26 @@
     &.header__sticky{
         visibility: visible;
         opacity: 1;
+    }
+}
+
+.header__top-right{
+    .offcanvas__social{
+         ul{
+                display: flex;
+             li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+
+                 a{
+                    height: 25px;
+                    width: 25px;
+                    line-height: 28px;
+                }
+
+            }
+        }
     }
 }

@@ -1526,7 +1526,6 @@ input[type=color] {
   }
 }
 .main-menu ul li {
-  position: relative;
   list-style: none;
   display: inline-block;
   margin-right: 27px;
@@ -1536,9 +1535,6 @@ input[type=color] {
   font-size: 15px;
   color: var(--tp-common-black-2);
   padding: 23px 0;
-}
-.main-menu ul li.has-dropdown > a {
-  position: relative;
 }
 .main-menu ul li.has-dropdown > a::after {
   content: "\f107";
@@ -1553,8 +1549,8 @@ input[type=color] {
 .main-menu ul li .submenu {
   position: absolute;
   top: 120%;
-  left: 0;
-  width: 200px;
+  width: 100%;
+  left: 0px;
   padding: 17px 0;
   padding-bottom: 15px;
   background: var(--tp-common-white);
@@ -1565,12 +1561,21 @@ input[type=color] {
   visibility: hidden;
   opacity: 0;
   z-index: 11;
-  border-top: 3px solid var(--tp-theme-1);
+  border-top: 3px solid var(--tp-theme-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main-menu ul li .submenu li {
-  display: block;
+  height: 50px;
   width: 100%;
   margin: 0;
+  text-align: center;
+  line-height: 50px;
+}
+.main-menu ul li .submenu li.has-dropdown > a {
+  font-size: 12px !important;
 }
 .main-menu ul li .submenu li.has-dropdown > a::after {
   position: absolute;
@@ -1597,11 +1602,11 @@ input[type=color] {
   visibility: hidden;
   opacity: 0;
 }
-.main-menu ul li .submenu li:hover > a {
-  color: var(--tp-theme-1);
+.main-menu ul li .submenu li:hover {
+  background-color: #f5f6f8;
 }
 .main-menu ul li .submenu li:hover > a::after {
-  color: var(--tp-theme-1);
+  color: var(--tp-theme-2);
 }
 .main-menu ul li .submenu li:hover > a::before {
   left: 0;
@@ -1614,7 +1619,7 @@ input[type=color] {
   opacity: 1;
 }
 .main-menu ul li:hover > a {
-  color: var(--tp-theme-1);
+  color: var(--tp-theme-2);
 }
 .main-menu ul li:hover > a::after {
   color: var(--tp-theme-1);
@@ -1746,6 +1751,76 @@ input[type=color] {
   opacity: 1;
 }
 
+.header__top-right .offcanvas__social ul {
+  display: flex;
+}
+.header__top-right .offcanvas__social ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.header__top-right .offcanvas__social ul li a {
+  height: 25px;
+  width: 25px;
+  line-height: 28px;
+}
+
+.announce-wrapper .announce {
+  height: auto;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+.announce-wrapper .announce p {
+  padding: 2px 5px;
+  margin-bottom: 0px !important;
+}
+.announce-wrapper .announce p span {
+  font-weight: 700;
+}
+.announce-wrapper .announce div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.announce-wrapper .announce div p {
+  white-space: nowrap;
+}
+.announce-wrapper .announce div p span {
+  margin-left: 10px;
+  color: var(--tp-theme-2);
+}
+.announce-wrapper .announce div .close {
+  margin: 0 20px 0 auto;
+  background-color: gray;
+  height: 20px;
+  width: 20px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 0.5;
+  line-height: 28px;
+  cursor: pointer;
+}
+.announce-wrapper .announce div .close:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .announce-wrapper .announce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .announce-wrapper .announce div {
+    min-width: 350px;
+    justify-content: flex-start;
+  }
+  .announce-wrapper .announce div .close {
+    position: absolute;
+    right: 0;
+  }
+}
 /*----------------------------------------*/
 /*  03. MEAN MENU CSS START
 /*----------------------------------------*/
@@ -5963,11 +6038,11 @@ input[type=color] {
   line-height: 42px;
   text-align: center;
   background: var(--tp-grey-1);
-  color: var(--tp-theme-1);
+  color: var(--tp-theme-2);
   border-radius: 5px;
 }
 .offcanvas__social ul li a:hover {
-  background: var(--tp-theme-1);
+  background: var(--tp-theme-2);
   color: var(--tp-common-white);
 }
 
