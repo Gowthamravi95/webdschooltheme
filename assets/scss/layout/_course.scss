@@ -1802,3 +1802,37 @@
         }
     }
 }
+
+
+
+.course-meta ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .course-meta li {
+    display: inline-block;
+    margin: 10px 25px;
+    color: #333333;
+    position: relative;
+    font-size: 12px;
+ }
+
+ .course-meta.desc li:after {
+    width: 1px;
+    height: 20px;
+    background-color: #e5e5e5;
+    position: absolute;
+    content: "";
+    right: -30px;
+    top: 5px;
+ }
+
+ .course-meta.desc li:last-child {
+    margin-right: 0;
+ }
+
+ .course-meta.desc li:last-child:after {
+    content: none;
+ }

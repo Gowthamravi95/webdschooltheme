@@ -33,9 +33,36 @@
 
     <link rel="stylesheet" href="assets/css/main.css">
 
-
+    <script>alert(window.FontAwesome.config)</script>
 </head>
 <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+   <!-- pre loader area start -->
+   <div id="loading">
+      <div id="loading-center">
+         <div id="loading-center-absolute">
+            <svg id="loader">
+               <path id="corners" d="m 0 12.5 l 0 -12.5 l 50 0 l 0 50 l -50 0 l 0 -37.5" />
+            </svg>
+            <img src="assets/img/favicon.png" alt="">
+         </div>
+      </div>
+   </div>
+   <!-- pre loader area end -->
+
+
+   <!-- back to top start -->
+   <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- back to top end -->
+
       <!-- header area start -->
       <header>
         <div class="header__area">
@@ -115,7 +142,7 @@
                                     <div class="border"></div>
                                     <li><a href="./online-course/web-design-development.html" >Web Designing &amp; Development</a></li>
                                     <li><a href="./online-course/graphic-design.html" >Graphic Design</a></li>
-                                    <li><a href="./-course/ux-ui-design.html" >UX UI Design</a></li>
+                                    <li><a href="./online-course/ux-ui-design.html" >UX UI Design</a></li>
                                     <li><a href="./online-course/digital-marketing.html" >Digital Marketing</a></li>
                                     <li><a href="./online-course/data-science.html" >Data Science</a>
                                     </li>
@@ -164,7 +191,7 @@
                   <div class="col-xxl-3 col-xl-3 col-lg-1 col-md-6 col-6">
                      <div class="header__bottom-right d-flex justify-content-end align-items-center pl-30">
                         
-                        <div class="header__hamburger ml-50 d-xl-none">
+                        <div class="header__hamburger ml-50 ">
                            <button type="button" data-bs-toggle="modal" data-bs-target="#offcanvasmodal" class="hamurger-btn">
                               <span></span>
                               <span></span>
@@ -182,6 +209,90 @@
      <!-- header area end -->
 
 
+ <!-- offcanvas area start -->
+ <div class="offcanvas__area">
+   <div class="modal fade" id="offcanvasmodal" tabindex="-1" aria-labelledby="offcanvasmodal" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="offcanvas__wrapper">
+               <div class="offcanvas__content">
+                  <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+                     <div class="offcanvas__logo logo">
+                        <a href="index.html">
+                           <img src="assets/img/logo/logo-2.png" alt="logo">
+                        </a>
+                     </div>
+                     <div class="offcanvas__close">
+                        <button class="offcanvas__close-btn" data-bs-toggle="modal" data-bs-target="#offcanvasmodal">
+                           <i class="fal fa-times"></i>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="offcanvas__search mb-25">
+                     <form action="#">
+                        <input type="text" placeholder="What are you searching for?">
+                        <button type="submit"><i class="far fa-search"></i></button>
+                     </form>
+                  </div>
+                  <div class="mobile-menu fix"></div>
+                  <div class="offcanvas__text d-none d-lg-block">
+                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and will give you a complete account of the system and expound the actual teachings
+                        of the great explore</p>
+                  </div>
+                  <div class="offcanvas__map d-none d-lg-block mb-15">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.750755178743!2d80.2041361!3d13.051530800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266c26fa8e309%3A0xb4cc68d4e7143bb1!2sWeb%20D%20School!5e0!3m2!1sen!2sin!4v1666351852073!5m2!1sen!2sin"   loading="lazy" ></iframe>
+                  </div>
+                  <div class="offcanvas__contact mt-30 mb-20">
+                     <h4>Contact Info</h4>
+                     <ul>
+                        <li class="d-flex align-items-center">
+                           <div class="offcanvas__contact-icon mr-15">
+                              <i class="fal fa-map-marker-alt"></i>
+                           </div>
+                           <div class="offcanvas__contact-text">
+                              <a target="_blank"
+                                 href="https://g.page/web-d-school-chennai">
+                                 saligramam, Chennai 600093</a>
+                           </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                           <div class="offcanvas__contact-icon mr-15">
+                              <i class="far fa-phone"></i>
+                           </div>
+                           <div class="offcanvas__contact-text">
+                              <a href="tel:+919791444450">+91 9791 4444 50</a>
+
+                           </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                           <div class="offcanvas__contact-icon mr-15">
+                              <i class="fal fa-envelope"></i>
+                           </div>
+                           <div class="offcanvas__contact-text">
+                              <a href="mailto:info@webdschool.com">info@webdschool.com</a>
+
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="offcanvas__social">
+                     <ul>
+                        <li><a href="https://www.facebook.com/pages/Web-D-School/1596246603984915?fref=ts" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://mobile.twitter.com/webdschool" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/web_dschool/"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfshjrc_tHWHeq2gnHcAMuQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/school/web-d-school/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="body-overlay"></div>
+<!-- offcanvas area end -->
 
 
 

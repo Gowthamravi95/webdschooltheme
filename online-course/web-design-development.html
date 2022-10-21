@@ -32,308 +32,19 @@
    <link rel="stylesheet" href="../assets/css/slick.css">
 
    <link rel="stylesheet" href="../assets/css/main.css">
+
+   <script>alert(window.FontAwesome.config)</script>
+
 <style>
    .accordion-body p{
       text-indent: 30px;
    }
-</style>
-
-   <style>
-      a.morelink i {
-          color: lightskyblue;
-          position: relative;
-          top: 1px;
-          left: 5px;
-      }
-
-      a.morelink {
-          text-decoration: none;
-          outline: none;
-          color: lightskyblue;
-          cursor: pointer;
-          line-height: 1.7;
-          font-size: 17px;
-          white-space: nowrap;
-      }
-
-      .morecontent span {
-          display: none;
-      }
-
-
-      /* css prorperties for height wise function  */
-      .readmore {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          max-height: 230px;
-          position: relative;
-      }
-
-      .readmore:before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 50px;
-          background: linear-gradient(to top, #f0f8f7, transparent);
-      }
-
-      .moreStyle {
-          overflow: none;
-          max-height: 1000px;
-
-      }
-
-      .readmore.nobefore::before {
-          display: none;
-      }
-  </style>
- <style>
-   /****-----club video wrapper css------*****/
-   .video_wrapper {
-      width: 100%;
-      float: left;
-      /* background-image: url(.../assets/img/video/background-video.jpg); */
-      height: 100%;
-      background-position: center 0;
-      background-size: cover;
-      position: relative;
-      padding: 100px 0;
-   }
-
-   .video_overlay {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.78);
-   }
-
-   .dmx_heading_wraper {
-      text-align: center;
-      padding-bottom: 55px;
-   }
-
-   .dmx_heading_wraper h2 {
-      /* font-size: 32px; */
-      /* padding-top:20px; */
-      /* text-transform: uppercase; */
-      /* font-weight: 500; */
-      /* color: #ef5e5e; */
-      position: relative;
-      /* margin-bottom: 50px; */
-   }
-
-   .dmx_heading_wraper P {
-      position: relative;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      color: #5F6160;
-      margin-bottom: 15px;
-      line-height: 26px;
-   }
-
-   .bars2 {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 143px;
-      margin: 0px auto;
-   }
-
-   .video_player_wrapper {
-      text-align: center;
-      float: left;
-      width: 100%;
-      position: relative;
-   }
-
-   .video_player_wrapper ul {
-      display: inline-block;
-      position: absolute;
-      top: 43%;
-      left: 0;
-      right: 0;
-      margin: 0px auto;
-   }
-
-   .video_player_wrapper li {
-      -webkit-border-radius: 100%;
-      -moz-border-radius: 100%;
-      border-radius: 100%;
-   }
-
-   .video_margin_wrapper {
-      margin-bottom: 30px;
-   }
-
-   @media (max-width: 767px) {
-
-      .dmx_heading_wraper {
-         padding-bottom: 50px;
-      }
-   }
-
-   @media (max-width: 380px) {
-      .dmx_heading_wraper h2 {
-         font-size: 26px;
-      }
-   }
-
-   @media (max-width: 1199px) and (min-width: 991px) {
-      .video_player_wrapper img {
-         width: 100%;
-      }
-   }
-
-   @media (max-width: 991px) {
-
-      .video_margin_wrapper,
-      .video_player_wrapper {
-         margin-bottom: 0;
-         margin-top: 30px;
-      }
-
-      .video_player_wrapper img {
-         width: 100%;
-      }
-   }
-
-   /* card mata course li */
-   .course-meta ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .course-meta li {
-      display: inline-block;
-      margin: 10px 25px;
-      color: #333333;
-      position: relative;
-      font-size: 12px;
-   }
-
-   .course-meta.desc li:after {
-      width: 1px;
-      height: 20px;
-      background-color: #e5e5e5;
-      position: absolute;
-      content: "";
-      right: -30px;
-      top: 5px;
-   }
-
-   .course-meta.desc li:last-child {
-      margin-right: 0;
-   }
-
-   .course-meta.desc li:last-child:after {
-      content: none;
-   }
-</style>
-<style>
-
-
-   /*----------------------------------------*/
-/*  03. FEATURES CSS START
-/*----------------------------------------*/
-
-
-.theme__features-border-right {
-  border-right: 1px solid #dedfe6;
-}
-.theme__features-border-bottom {
-  border-bottom: 1px solid #dedfe6;
-}
-.theme__features-item {
-padding: 40px 30px 30px 30px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .theme__features-item {
-    border: none;
-    border-right: 1px solid #dedfe6;
-    border-bottom: 1px solid #dedfe6;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
-  .theme__features-item {
-    border: none;
-    border-right: 1px solid #dedfe6;
-    border-bottom: 1px solid #dedfe6;
-  }
-}
-.theme__features-item:hover {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  border-color: #ffffff;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 20px 30px 0px rgba(1, 11, 60, 0.08);
-  -moz-box-shadow: 0px 20px 30px 0px rgba(1, 11, 60, 0.08);
-  box-shadow: 0px 20px 30px 0px rgba(1, 11, 60, 0.08);
-}
-.theme__features-item:hover .theme__features-icon span {
-  border-color: #ebedf3;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.theme__features-icon span {
-  display: inline-block;
-  width: 120px;
-  height: 90px;
-  line-height: 90px;
-  text-align: center;
-  background: #ffffff;
-  border: 2px solid transparent;
-  overflow: hidden;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
-  -moz-box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
-  box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
-}
-.theme__features-icon span img {
-  width: 90px;
-}
-.theme__features-content h3 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 2px;
-}
-.theme__features-content span {
-  font-size: 15px;
-  color: #258E46;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-@-webkit-keyframes hand-pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 white;
-  }
-  70% {
-    -webkit-box-shadow: 0 0 0 80px rgba(255, 255, 255, 0);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-  }
-}
-@keyframes hand-pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
-  }
-  70% {
-    -webkit-box-shadow: 0 0 0 80px rgba(255, 255, 255, 0);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-  }
+   .readmore:before {
+    background: linear-gradient(to top, #f0f8f7, transparent);
 }
 </style>
+
+  
 
 <style>
 
@@ -487,7 +198,7 @@ span.required {
                                     <div class="border"></div>
                                     <li><a href="../online-course/web-design-development.html" >Web Designing &amp; Development</a></li>
                                     <li><a href="../online-course/graphic-design.html" >Graphic Design</a></li>
-                                    <li><a href="../-course/ux-ui-design.html" >UX UI Design</a></li>
+                                    <li><a href="../online-course/ux-ui-design.html" >UX UI Design</a></li>
                                     <li><a href="../online-course/digital-marketing.html" >Digital Marketing</a></li>
                                     <li><a href="../online-course/data-science.html" >Data Science</a>
                                     </li>
@@ -536,7 +247,7 @@ span.required {
                   <div class="col-xxl-3 col-xl-3 col-lg-1 col-md-6 col-6">
                      <div class="header__bottom-right d-flex justify-content-end align-items-center pl-30">
                         
-                        <div class="header__hamburger ml-50 d-xl-none">
+                        <div class="header__hamburger ml-50 ">
                            <button type="button" data-bs-toggle="modal" data-bs-target="#offcanvasmodal" class="hamurger-btn">
                               <span></span>
                               <span></span>
@@ -552,89 +263,91 @@ span.required {
    </header>
    <!-- header area end -->
 
-   <!-- offcanvas area start -->
-   <div class="offcanvas__area">
-      <div class="modal fade" id="offcanvasmodal" tabindex="-1" aria-labelledby="offcanvasmodal" aria-hidden="true">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="offcanvas__wrapper">
-                  <div class="offcanvas__content">
-                     <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
-                        <div class="offcanvas__logo logo">
-                           <a href="index.html">
-                              <img src="../assets/img/logo/logo.png" alt="logo">
-                           </a>
-                        </div>
-                        <div class="offcanvas__close">
-                           <button class="offcanvas__close-btn" data-bs-toggle="modal" data-bs-target="#offcanvasmodal">
-                              <i class="fal fa-times"></i>
-                           </button>
-                        </div>
+  <!-- offcanvas area start -->
+  <div class="offcanvas__area">
+   <div class="modal fade" id="offcanvasmodal" tabindex="-1" aria-labelledby="offcanvasmodal" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="offcanvas__wrapper">
+               <div class="offcanvas__content">
+                  <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+                     <div class="offcanvas__logo logo">
+                        <a href="index.html">
+                           <img src="assets/img/logo/logo-2.png" alt="logo">
+                        </a>
                      </div>
-                     <div class="offcanvas__search mb-25">
-                        <form action="#">
-                           <input type="text" placeholder="What are you searching for?">
-                           <button type="submit"><i class="far fa-search"></i></button>
-                        </form>
+                     <div class="offcanvas__close">
+                        <button class="offcanvas__close-btn" data-bs-toggle="modal" data-bs-target="#offcanvasmodal">
+                           <i class="fal fa-times"></i>
+                        </button>
                      </div>
-                     <div class="mobile-menu fix"></div>
-                     <div class="offcanvas__text d-none d-lg-block">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
-                           was born and will give you a complete account of the system and expound the actual teachings
-                           of the great explore</p>
-                     </div>
-                     <div class="offcanvas__map d-none d-lg-block mb-15">
-                        <iframe
-                           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
-                     </div>
-                     <div class="offcanvas__contact mt-30 mb-20">
-                        <h4>Contact Info</h4>
-                        <ul>
-                           <li class="d-flex align-items-center">
-                              <div class="offcanvas__contact-icon mr-15">
-                                 <i class="fal fa-map-marker-alt"></i>
-                              </div>
-                              <div class="offcanvas__contact-text">
-                                 <a target="_blank"
-                                    href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A,
-                                    Mirnada City Tower, NYC</a>
-                              </div>
-                           </li>
-                           <li class="d-flex align-items-center">
-                              <div class="offcanvas__contact-icon mr-15">
-                                 <i class="far fa-phone"></i>
-                              </div>
-                              <div class="offcanvas__contact-text">
-                                 <a href="mailto:support@gmail.com">088889797697</a>
-                              </div>
-                           </li>
-                           <li class="d-flex align-items-center">
-                              <div class="offcanvas__contact-icon mr-15">
-                                 <i class="fal fa-envelope"></i>
-                              </div>
-                              <div class="offcanvas__contact-text">
-                                 <a href="tel:+012-345-6789">support@mail.com</a>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="offcanvas__social">
-                        <ul>
-                           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                           <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
-                     </div>
+                  </div>
+                  <div class="offcanvas__search mb-25">
+                     <form action="#">
+                        <input type="text" placeholder="What are you searching for?">
+                        <button type="submit"><i class="far fa-search"></i></button>
+                     </form>
+                  </div>
+                  <div class="mobile-menu fix"></div>
+                  <div class="offcanvas__text d-none d-lg-block">
+                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and will give you a complete account of the system and expound the actual teachings
+                        of the great explore</p>
+                  </div>
+                  <div class="offcanvas__map d-none d-lg-block mb-15">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.750755178743!2d80.2041361!3d13.051530800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266c26fa8e309%3A0xb4cc68d4e7143bb1!2sWeb%20D%20School!5e0!3m2!1sen!2sin!4v1666351852073!5m2!1sen!2sin"   loading="lazy" ></iframe>
+                  </div>
+                  <div class="offcanvas__contact mt-30 mb-20">
+                     <h4>Contact Info</h4>
+                     <ul>
+                        <li class="d-flex align-items-center">
+                           <div class="offcanvas__contact-icon mr-15">
+                              <i class="fal fa-map-marker-alt"></i>
+                           </div>
+                           <div class="offcanvas__contact-text">
+                              <a target="_blank"
+                                 href="https://g.page/web-d-school-chennai">
+                                 saligramam, Chennai 600093</a>
+                           </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                           <div class="offcanvas__contact-icon mr-15">
+                              <i class="far fa-phone"></i>
+                           </div>
+                           <div class="offcanvas__contact-text">
+                              <a href="tel:+919791444450">+91 9791 4444 50</a>
+
+                           </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                           <div class="offcanvas__contact-icon mr-15">
+                              <i class="fal fa-envelope"></i>
+                           </div>
+                           <div class="offcanvas__contact-text">
+                              <a href="mailto:info@webdschool.com">info@webdschool.com</a>
+
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="offcanvas__social">
+                     <ul>
+                        <li><a href="https://www.facebook.com/pages/Web-D-School/1596246603984915?fref=ts" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://mobile.twitter.com/webdschool" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/web_dschool/"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfshjrc_tHWHeq2gnHcAMuQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/school/web-d-school/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </div>
-   <!-- offcanvas area end -->
-   <div class="body-overlay"></div>
-   <!-- offcanvas area end -->
+</div>
+<div class="body-overlay"></div>
+<!-- offcanvas area end -->
+
 
    <main>
 
@@ -914,7 +627,7 @@ span.required {
                               <h2 class="section__title section__title-44">Online Web Desgin & Developmet (Front End)</h2>
                            </div>
                        
-                              <div class="readmore">
+                              <div class="readmore readmore-height2" data-height="230px">
                                  <p>Our online web design and development course covers the following
                                     topics under web design - information architecture , web graphics
                                     design,website structure, User interface, Navigation ergonomics,
@@ -2527,42 +2240,7 @@ span.required {
 
    <script src="../assets/js/main.js"></script>
 
-   <script>
-      $(document).ready(function(){
-       
-         var moretext = `Read More<i class="fa-solid fa-angle-down"></i>`;
-         var lesstext = `Read Less<i class="fa-solid fa-angle-up"></i>`;
-         $('.readmore').each(function () {
-
-
-            let h = $(this).height();
-
-            if (h == 230) {
-               $(this).after('<div><a href="" class="morelink">' + moretext + '</a></div>');
-
-            } else {
-               $(this).addClass('nobefore');
-            }
-
-         });
-
-         $(".morelink").click(function () {
-            if ($(this).hasClass("less")) {
-               $(this).removeClass("less");
-               $(this).html(moretext);
-
-            } else {
-               $(this).addClass("less");
-               $(this).html(lesstext);
-
-            }
-            $(this).parent().prev().toggleClass('moreStyle nobefore');
-            return false;
-         });
-
-         
-      })
-</script>
+   <script src="../assets/js/moretext.js"></script>
 
 </body>
 
