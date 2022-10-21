@@ -87,8 +87,8 @@ $(".header__area").append(
                                     <ul class="submenu">
                                        <li><a href="./designerpro-course-in-chennai.html" >Designer Pro Course</a></li>
                                        <li><a href="./graphic-design-courses-in-chennai.html" >Advanced Graphic Designing Course</a></li>
-                                       <li><a href="./ui-ux-design-course-in-chennai.html" >UI / UX Designing Course</a></li>
-                                       <li><a href="./web-development-course-in-chennai.html" >Web Design &amp; Development</a></li>
+                                       <li><a href="/ui-ux-design-course-in-chennai.html" >UI / UX Designing Course</a></li>
+                                       <li><a href="/web-development-course-in-chennai.html" >Web Design &amp; Development</a></li>
                                        <li><a href="./digital-marketing-course-in-chennai.html" >Digital Marketing Course</a></li>
                                        <li><a href="./film-editing-courses-in-chennai.html" >Film Editing Course</a></li>
                                        <li><a href="./data-science-course-in-chennai.html" >Data Science Course</a></li>
