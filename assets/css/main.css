@@ -1952,21 +1952,21 @@ input[type=color] {
   }
 }
 .slider__height-2 {
-  min-height: 900px;
+  min-height: 650px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider__height-2 {
-    min-height: 1200px;
+    min-height: 1000px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider__height-2 {
-    min-height: 1200px;
+    min-height: 900px;
   }
 }
 @media (max-width: 575px) {
   .slider__height-2 {
-    min-height: 950px;
+    min-height: 650px;
   }
 }
 .slider__height-3 {
