@@ -1,5 +1,12 @@
 $(".script-links").append(
     ` 
+    <script src="./assets/render/head-links.js"></script>
+
+    <script src="./assets/render/header.js"></script>
+
+
+
+
     <script src="assets/js/vendor/waypoints.js"></script>
     <script src="assets/js/bootstrap-bundle.js"></script>
     <script src="assets/js/meanmenu.js"></script>
@@ -22,8 +29,6 @@ $(".script-links").append(
 
    
 
-   <script src="./assets/render/head-links.js"></script>
-   <script src="./assets/render/header.js"></script>
    
    
    `
