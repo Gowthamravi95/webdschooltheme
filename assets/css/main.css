@@ -1548,7 +1548,6 @@ input[type=color] {
 }
 .main-menu ul li .submenu {
   position: absolute;
-  top: 120%;
   width: 100%;
   left: 0px;
   padding: 17px 0;
@@ -1557,13 +1556,46 @@ input[type=color] {
   -ms-box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
   -o-box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
   box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
-  transition: all 0.3s ease-out 0s;
-  visibility: hidden;
+  transition: top 0.5s;
   z-index: 11;
+  display: none;
   border-top: 3px solid var(--tp-theme-2);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-animation: showNav 400ms ease-in-out both;
+          animation: showNav 400ms ease-in-out both;
+}
+.main-menu ul li .submenu .border {
+  position: relative;
+  width: 100%;
+  visibility: hidden;
+}
+.main-menu ul li .submenu .border:after {
+  top: -50px;
+  background: transparent;
+  width: 100%;
+  height: 45px;
+  content: "";
+  left: 0;
+  position: absolute;
+  visibility: visible;
+}
+@-webkit-keyframes showNav {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 100%;
+  }
+}
+@keyframes showNav {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 100%;
+  }
 }
 .main-menu ul li .submenu li {
   height: 50px;
@@ -1613,7 +1645,6 @@ input[type=color] {
 }
 .main-menu ul li .submenu li:hover > .submenu {
   left: 100%;
-  visibility: visible;
 }
 .main-menu ul li:hover > a {
   color: var(--tp-theme-2);
@@ -1622,9 +1653,7 @@ input[type=color] {
   color: var(--tp-theme-1);
 }
 .main-menu ul li:hover > .submenu {
-  top: 100%;
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 .main-menu-2 ul li a {
   font-weight: 500;

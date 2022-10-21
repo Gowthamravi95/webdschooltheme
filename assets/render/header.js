@@ -72,7 +72,7 @@ $(".header__area").append(
                                  <li class="has-dropdown">
                                     <a href="#courses">Online Courses</a>
                                     <ul class="submenu ">
-                                       
+                                       <div class="border"></div>
                                        <li><a href="./online-course/web-design-development.html" >Web Designing &amp; Development</a></li>
                                        <li><a href="./online-course/graphic-design.html" >Graphic Design</a></li>
                                        <li><a href="./-course/ux-ui-design.html" >UX UI Design</a></li>
@@ -86,6 +86,7 @@ $(".header__area").append(
                                  <li class="has-dropdown">
                                     <a href="#courses">Offline Courses</a>
                                     <ul class="submenu">
+                                    <div class="border"></div>
                                        <li><a href="./designerpro-course-in-chennai.html" >Designer Pro Course</a></li>
                                        <li><a href="./graphic-design-courses-in-chennai.html" >Advanced Graphic Designing Course</a></li>
                                        <li><a href="./ui-ux-design-course-in-chennai.html" >UI / UX Designing Course</a></li>
@@ -106,6 +107,7 @@ $(".header__area").append(
                                  <li class="has-dropdown">
                                     <a href="">More</a>
                                     <ul class="submenu">
+                                    <div class="border"></div>
                                           <li><a href="./placement.html" >Placements</a></li>
                                           <li><a href="./studentstestimonial.html" >Testimonials</a></li>
                                           <li><a href="./gallery.html" >Student Works</a></li>
