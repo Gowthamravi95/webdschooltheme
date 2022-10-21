@@ -357,14 +357,14 @@
                 padding-bottom: 15px;
                 background: var(--tp-common-white);
                 @include box-shadow(0px 10px 20px 0px rgba(8, 0, 42, 0.08));
-                @include transition(.1s);
+                @include transition(.3s);
                 visibility: hidden;
-                opacity: 0;
                 z-index: 11;
                 border-top: 3px solid var(--tp-theme-2);
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                
                 & li{
                     height: 50px;
                     width: 100%;
@@ -417,7 +417,6 @@
                         & > .submenu{
                             left: 100%;
                             visibility: visible;
-                            opacity: 1;
                         }
                     }
                 }
