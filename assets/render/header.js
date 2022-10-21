@@ -85,13 +85,13 @@ $(".header__area").append(
                                  <li class="has-dropdown">
                                     <a href="#courses">Offline Courses</a>
                                     <ul class="submenu">
-                                       <li><a href="./designerpro-course-in-chennai.html" >Designer Pro Course</a></li>
-                                       <li><a href="./graphic-design-courses-in-chennai.html" >Advanced Graphic Designing Course</a></li>
-                                       <li><a href="./ui-ux-design-course-in-chennai.html" >UI / UX Designing Course</a></li>
-                                       <li><a href="./web-development-course-in-chennai.html" >Web Design &amp; Development</a></li>
-                                       <li><a href="./digital-marketing-course-in-chennai.html" >Digital Marketing Course</a></li>
-                                       <li><a href="./film-editing-courses-in-chennai.html" >Film Editing Course</a></li>
-                                       <li><a href="./data-science-course-in-chennai.html" >Data Science Course</a></li>
+                                       <li><a href="./webdschooltheme/designerpro-course-in-chennai.html" >Designer Pro Course</a></li>
+                                       <li><a href="./webdschooltheme./graphic-design-courses-in-chennai.html" >Advanced Graphic Designing Course</a></li>
+                                       <li><a href="./webdschooltheme/ui-ux-design-course-in-chennai.html" >UI / UX Designing Course</a></li>
+                                       <li><a href="./webdschooltheme/web-development-course-in-chennai.html" >Web Design &amp; Development</a></li>
+                                       <li><a href="./webdschooltheme/digital-marketing-course-in-chennai.html" >Digital Marketing Course</a></li>
+                                       <li><a href="./webdschooltheme/film-editing-courses-in-chennai.html" >Film Editing Course</a></li>
+                                       <li><a href="./webdschooltheme/data-science-course-in-chennai.html" >Data Science Course</a></li>
                                        
                                        </ul>
                                  </li>
@@ -99,17 +99,17 @@ $(".header__area").append(
                                     <a href="https://careers.webdschool.com/">Job Portal</a>
                                  </li>
                                  <li>
-                                    <a href="./contact.html">Contact</a>
+                                    <a href="./webdschooltheme/contact.html">Contact</a>
                                  </li>
 
                                  <li class="has-dropdown">
                                     <a href="">More</a>
                                     <ul class="submenu">
-                                          <li><a href="./placement.html" >Placements</a></li>
-                                          <li><a href="./studentstestimonial.html" >Testimonials</a></li>
-                                          <li><a href="./gallery.html" >Student Works</a></li>
-                                           <li><a href="./blog.html" >Blog</a></li>
-                                          <li><a href="./infrastructure.html" >Infrastructure</a></li>
+                                          <li><a href="./webdschooltheme/placement.html" >Placements</a></li>
+                                          <li><a href="./webdschooltheme/studentstestimonial.html" >Testimonials</a></li>
+                                          <li><a href="./webdschooltheme/gallery.html" >Student Works</a></li>
+                                           <li><a href="./webdschooltheme/blog.html" >Blog</a></li>
+                                          <li><a href="./webdschooltheme/infrastructure.html" >Infrastructure</a></li>
                                       
                                     </ul>
                                  </li>
