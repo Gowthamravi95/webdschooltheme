@@ -55,7 +55,7 @@ $(".header__area").append(
                   <div class="row align-items-center position-relative">
                      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
                         <div class="logo">
-                           <a href="/index.html">
+                           <a href="./index.html">
                               <img src="./assets/img/logo/logo-2.png" alt="logo">
                            </a>
                         </div>
@@ -65,13 +65,14 @@ $(".header__area").append(
                            <nav id="mobile-menu">
                               <ul>
                                  <li>
-                                    <a href="/index.html">Home</a>
+                                    <a href="./index.html">Home</a>
                                   
                                  </li>
                                 
                                  <li class="has-dropdown">
                                     <a href="#courses">Online Courses</a>
                                     <ul class="submenu ">
+                                       
                                        <li><a href="./online-course/web-design-development.html" >Web Designing &amp; Development</a></li>
                                        <li><a href="./online-course/graphic-design.html" >Graphic Design</a></li>
                                        <li><a href="./-course/ux-ui-design.html" >UX UI Design</a></li>
