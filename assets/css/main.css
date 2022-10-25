@@ -2889,6 +2889,65 @@ input[type=color] {
   }
 }
 
+.form-heading {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #f66;
+  width: 100%;
+  padding: 15px 0;
+}
+
+span.required {
+  font-size: 13px;
+  color: #f66;
+}
+
+input {
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left;
+  color: #49535B;
+  width: 100%;
+}
+
+#selectcat {
+  display: block;
+}
+
+.button-align-center {
+  text-align: center !important;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.submit-large-button {
+  padding: 0 130px;
+  background-color: #f66;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.submit-large-button:hover {
+  color: #f66;
+  background-color: white;
+}
+
 .video_wrapper {
   width: 100%;
   float: left;
@@ -3050,46 +3109,6 @@ input[type=color] {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
-.form-heading {
-  font-size: 24px;
-  text-align: center;
-  color: #fff;
-  background-color: #f66;
-  width: 100%;
-  padding: 15px 0;
-}
-
-span.required {
-  font-size: 13px;
-  color: #f66;
-}
-
-input, #selectcat {
-  width: 96%;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-#selectcat {
-  display: block;
-}
-
-.button-align-center {
-  text-align: center !important;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-.submit-large-button {
-  padding: 7px 130px;
-  background-color: #f66;
-}
-
-.submit-large-button:hover {
-  color: #f66;
-  background-color: white;
-}
-
 .offer_wrapper {
   width: 100%;
   height: 100%;
@@ -8150,6 +8169,12 @@ a.morelink {
 /*----------------------------------------*/
 /*  18. TESTIMONIAL CSS START
 /*----------------------------------------*/
+@media (max-width: 575px) {
+  .testimonial__slider {
+    width: 80vw;
+    margin: auto;
+  }
+}
 .testimonial__slider .owl-stage-outer {
   overflow: visible;
 }
@@ -8258,6 +8283,29 @@ a.morelink {
 .testimonial__rating ul li a {
   font-size: 14px;
   color: var(--tp-common-yellow-4);
+}
+
+.owl-prev, .owl-next {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-prev {
+  left: -20px;
+}
+
+.owl-next {
+  right: -20px;
+}
+
+.owl-prev i, .owl-next i {
+  transform: scale(2.5);
+  color: #ccc;
 }
 
 /*----------------------------------------*/

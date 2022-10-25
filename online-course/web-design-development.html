@@ -21,6 +21,7 @@
 
    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
 
+   <link rel="stylesheet" href="../assets/css/nice-select.css">
 
    <link rel="stylesheet" href="../assets/css/font-awesome-pro.css">
 
@@ -41,52 +42,9 @@
    .readmore:before {
     background: linear-gradient(to top, #f0f8f7, transparent);
 }
+
+
 </style>
-
-  
-
-<style>
-
-
-.form-heading {
-    font-size: 24px;
-    text-align: center;
-    color: #fff;
-    background-color: #f66;
-    width: 100%;
-    padding: 15px 0
-}
-span.required {
- font-size:13px;
- color:#f66
-}
- input, select
-{
-    width: 96%;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-#selectcat{
-   display: block;
-}
-.button-align-center {
- text-align:center!important;
- padding-bottom:20px;
- padding-top:20px
-}
-
-.submit-large-button {
- padding: 7px 130px;
- background-color:#f66;
-}
-.submit-large-button:hover {
- color: #f66 ;
- background-color: white;
-}  
-</style>
-
-
-
 
 
 </head>
@@ -355,7 +313,7 @@ span.required {
          <div class=" swiper-container">
             <div class="swiper-wrapper">
                <div class="slider__item swiper-slide p-relative slider__height d-flex align-items-center z-index-1">
-                  <div class="slider__bg slider__overlay include-bg" data-background="../assets/img/slider/slider-1.jpg">
+                  <div class="slider__bg  include-bg" data-background="../assets/img/slider/slider-1.jpg">
                   </div>
                   <div class="container">
                      <div class="row">
@@ -895,7 +853,7 @@ span.required {
                                          <div class="cont-div">
                                            <div class="span5 webview">
                                              <label class="contact-label"  required>Course Mode<span class="required">* </span></label>
-                                             <select id="selectcat" name="categoryselected" class="span5 myList" required >
+                                             <select id="selectcat" name="categoryselected" class="span5 myList wide mb-10" required >
                                                <option value="" class="rhth">Course Mode</option>
                                                <option class="online" id="selectionone" value="online" style="text-align:left;color:black">Online
                                                  Course</option>
@@ -906,8 +864,8 @@ span.required {
                                          </div>
                                          <div class="cont-div">
                                            <label class="contact-label">Select the Course <span class="required">* </span></label>
-                                           
-                                           <select id="selectprod" name="course" class="span5 myList selectors online" >
+
+                                           <select id="selectprod" name="course" class="span5 myList selectors online wide mb-10" >
                                              <option value="" class="test">Select the Course</option>
                                              <option value="Online Graphic Design" class="selectors online">Graphic Design</option>
                                              <option value="Online Web Design & Development" class="selectors online">Web Design & Development
@@ -931,9 +889,9 @@ span.required {
                                            data-callback="verifyCaptcha"></div>
                                          <div id="g-recaptcha-error"></div>
                                          <br />
-                                         <div class="cont-div button-align-center">
+                                         <div class="cont-div button-align-center mb-20 text-white fs-5">
                                            <input type="submit" name="sub" id="submit-contact" value="Submit"
-                                             class=" button_large submit-large-button">
+                                             class=" button_large submit-large-button ">
                                          </div>
                                          <div>
                            
@@ -1898,9 +1856,7 @@ span.required {
                            </div>
                            <div class="testimonial__text">
                               <h4>Karthik Narayanan.K</h4>
-                              <p>I did a UX UI Design course here; at Web D School and ever since then, every day here
-                                 was all about
-                                 exponential learning and a lot of Brainstorming with the faculty. Everything
+                              <p>I did a UX UI Design course here at Web D School. Everything
                                  that we learn here is actually based on what the industry demands and a lot more.
                                  So many workshops, seminars and competitions are held here which make us better
                                  designers.
@@ -2229,6 +2185,7 @@ span.required {
    <script src="../assets/js/magnific-popup.js"></script>
    <script src="../assets/js/parallax.js"></script>
    <script src="../assets/js/backtotop.js"></script>
+   <script src="../assets/js/nice-select.js"></script>
    <script src="../assets/js/counterup.js"></script>
    <script src="../assets/js/wow.js"></script>
    <script src="../assets/js/isotope-pkgd.js"></script>

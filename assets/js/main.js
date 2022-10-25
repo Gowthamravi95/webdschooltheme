@@ -82,7 +82,9 @@
 
 	////////////////////////////////////////////////////
 	// 07. Nice Select Js
+	
 	$('select').niceSelect();
+
 
 	////////////////////////////////////////////////////
 	// 08. slider__active Slider Js
@@ -189,8 +191,8 @@
 		loop: true,
 		margin: 30,
 		items: 4,
-		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
-		nav: false,
+		navText: ['<button class="nav-left"><i class="fal fa-chevron-circle-left"></i></button>', '<button class="nav-right"><i class="fal fa-chevron-circle-right"></i></button>'],
+		nav: true,
 		dots: true,
 		slideTransition: 'fadeOutLeft',
 		smartSpeed: 300,
@@ -198,7 +200,7 @@
 			0: {
 				items: 1
 			},
-			767: {
+			768: {
 				items: 2
 			},
 			992: {
@@ -371,7 +373,7 @@
 	// 21. Counter Js
 	$('.counter').counterUp({
 		delay: 10,
-		time: 1000,
+		time: 500,
 	});
 
 	////////////////////////////////////////////////////
