@@ -428,7 +428,7 @@
 
 ////////////////////////////////////////////////////
 	// 23. Catergory sticky top
-	$(".course-tab").css({"position":"sticky","top":"40px","background-color":"#F7F7F7","padding-top":"20px","z-index":"9"})
+	$(".course-tab").css({"position":"sticky","top":"30px","background-color":"#F7F7F7","padding-top":"20px","z-index":"9"})
 
 
 
