@@ -6,7 +6,7 @@
 
 
       let h = $(this).height();
-      if (h == 230 || h==330) {
+      if (h == 230 || h==430) {
          $(this).after('<div><a href="" class="morelink">' + moretext + '</a></div>');
 
       } else {

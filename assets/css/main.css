@@ -602,11 +602,6 @@ input[type=color] {
   color: var(--tp-common-white);
   border-color: var(--tp-theme-2);
 }
-.tp-btn-6 {
-  height: 42px;
-  line-height: 38px;
-  padding: 0 25px;
-}
 .tp-btn-7 {
   height: 46px;
   line-height: 42px;
@@ -716,12 +711,19 @@ input[type=color] {
   background-color: var(--tp-theme-2);
 }
 .tp-btn-green:hover {
-  background-color: var(--tp-common-black-3);
-  color: var(--tp-common-white);
+  background-color: white;
+  color: var(--tp-common-black-3);
+  border: 1px solid #ed8621;
 }
 .tp-btn-green:focus {
-  background-color: var(--tp-common-black-3);
-  color: var(--tp-common-white);
+  background-color: white;
+  color: var(--tp-common-black-3);
+  border: 1px solid #ed8621;
+}
+.tp-btn-6 {
+  height: 42px;
+  line-height: 38px;
+  padding: 0 25px;
 }
 
 .tp-price-btn {
@@ -3179,7 +3181,7 @@ a.morelink {
 }
 
 .readmore-height1 {
-  max-height: 330px;
+  max-height: 430px;
 }
 
 .readmore-height2 {
@@ -3329,7 +3331,6 @@ a.morelink {
   }
 }
 .blog-wrapper {
-  padding-top: 35px;
   position: relative;
 }
 
@@ -5608,7 +5609,7 @@ a.morelink {
 
 .course-meta li {
   display: inline-block;
-  margin: 10px 25px;
+  margin: 10px 23px;
   color: #333333;
   position: relative;
   font-size: 12px;
