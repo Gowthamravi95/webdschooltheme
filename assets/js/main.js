@@ -218,11 +218,11 @@
 		spaceBetween: 30,
 		slidesPerView: 2,
 		breakpoints: {  
+			'992': {
+				slidesPerView: 3,
+			},
 			'768': {
 				slidesPerView: 2,
-			},
-			'576': {
-				slidesPerView: 1,
 			},
 			'0': {
 				slidesPerView: 1,
@@ -231,6 +231,11 @@
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
 		},
 	});
 

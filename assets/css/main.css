@@ -5152,6 +5152,24 @@ a.morelink {
   content: none;
 }
 
+.swiper-button-next {
+  right: 15px !important;
+}
+.swiper-button-next::after {
+  content: "" !important;
+}
+
+.swiper-button-prev {
+  left: 15px !important;
+}
+.swiper-button-prev::after {
+  content: "" !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 30% !important;
+}
+
 /*----------------------------------------*/
 /*  09. CAMPUS CSS START
 /*----------------------------------------*/

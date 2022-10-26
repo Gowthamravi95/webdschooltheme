@@ -1836,3 +1836,20 @@
  .course-meta.desc li:last-child:after {
     content: none;
  }
+
+ .swiper-button-next{
+    right: 15px !important;
+    &::after{
+        content: "" !important;
+    }
+ }
+ .swiper-button-prev{
+    left: 15px !important;
+
+    &::after{
+        content: "" !important;
+    }
+ }
+ .swiper-button-prev,.swiper-button-next{
+    top: 30% !important;
+ }
