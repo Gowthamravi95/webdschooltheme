@@ -292,19 +292,19 @@ input[type=color] {
 }
 
 *::-moz-placeholder {
-  color: var(--tp-common-black);
+  color: #49535B;
   font-size: var(--tp-fz-body);
   opacity: 1;
 }
 
 *:-ms-input-placeholder {
-  color: var(--tp-common-black);
+  color: #49535B;
   font-size: var(--tp-fz-body);
   opacity: 1;
 }
 
 *::placeholder {
-  color: var(--tp-common-black);
+  color: #49535B;
   font-size: var(--tp-fz-body);
   opacity: 1;
 }
@@ -989,7 +989,7 @@ input[type=color] {
 /*----------------------------------------*/
 .breadcrumb__title {
   font-size: 65px;
-  color: var(--tp-common-white);
+  color: var(--tp-text-body);
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .breadcrumb__title {
@@ -1029,15 +1029,15 @@ input[type=color] {
   margin-bottom: 12px;
 }
 .breadcrumb__list span {
-  font-size: 16px;
-  color: var(--tp-common-white);
+  font-size: 12px;
+  color: var(--tp-text-body);
   font-weight: 500;
   padding-right: 3px;
   margin-right: 3px;
   text-transform: capitalize;
 }
 .breadcrumb__list span a:hover {
-  color: var(--tp-theme-1);
+  color: var(--tp-theme-2);
 }
 .breadcrumb__list-2 span {
   font-size: 14px;
@@ -2989,6 +2989,9 @@ a.morelink {
   text-overflow: ellipsis;
   position: relative;
 }
+.readmore p {
+  font-size: 16px;
+}
 
 .readmore-height1 {
   max-height: 430px;
@@ -4572,9 +4575,6 @@ a.morelink {
 }
 .course__curriculum-content:last-child {
   border: none;
-}
-.course__curriculum-content:hover {
-  background: #f6f7fb;
 }
 .course__curriculum-info svg {
   width: 16px;
