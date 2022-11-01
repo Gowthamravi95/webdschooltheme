@@ -9,8 +9,8 @@
     &__content{
         & p{
             color: var(--tp-text-11);
-            font-size: 18px;
-            margin-bottom: 40px;
+            font-size: 16px;
+            // margin-bottom: 40px;
         }
         & .section__title.section__title-44{
             @media #{$xs}{

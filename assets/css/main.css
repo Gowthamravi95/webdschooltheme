@@ -7641,8 +7641,7 @@ a.morelink {
 /*----------------------------------------*/
 .certificate__content p {
   color: var(--tp-text-11);
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 16px;
 }
 @media (max-width: 575px) {
   .certificate__content .section__title.section__title-44 {
