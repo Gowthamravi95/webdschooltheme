@@ -11,6 +11,11 @@
             color: var(--tp-text-11);
             font-size: 16px;
             // margin-bottom: 40px;
+            & i{
+                margin-right: 15px;
+                color: var(--tp-theme-2);
+                line-height:unset;
+            }
         }
         & .section__title.section__title-44{
             @media #{$xs}{

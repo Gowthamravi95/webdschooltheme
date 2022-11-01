@@ -5591,8 +5591,8 @@ a.morelink {
 }
 .blog__content {
   padding: 0 30px;
-  padding-top: 13px;
-  padding-bottom: 25px;
+  padding-top: 43px;
+  padding-bottom: 55px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .blog__content {
@@ -7642,6 +7642,11 @@ a.morelink {
 .certificate__content p {
   color: var(--tp-text-11);
   font-size: 16px;
+}
+.certificate__content p i {
+  margin-right: 15px;
+  color: var(--tp-theme-2);
+  line-height: unset;
 }
 @media (max-width: 575px) {
   .certificate__content .section__title.section__title-44 {
