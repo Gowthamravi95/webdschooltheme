@@ -93,18 +93,18 @@
             padding: 45px 40px;
             padding-right: 70px;
             @include border-radius(4px);
-            @include box-shadow(0px 30px 50px 0px rgba(1, 11, 60, 0.1));
+            // @include box-shadow(0px 30px 50px 0px rgba(1, 11, 60, 0.1));
             position: relative;
             z-index: 1;
 
             @media #{$md}{
-                margin-top: 50px;
+                // margin-top: 50px;
             }
             @media #{$sm}{
-                margin-top: 50px;
+                // margin-top: 50px;
             }
             @media #{$xs}{
-                margin-top: 50px;
+                // margin-top: 50px;
                 padding-right: 35px;
             }
 

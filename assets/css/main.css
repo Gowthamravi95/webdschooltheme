@@ -5592,7 +5592,7 @@ a.morelink {
 .blog__content {
   padding: 0 30px;
   padding-top: 43px;
-  padding-bottom: 55px;
+  padding-bottom: 43px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .blog__content {
@@ -8179,25 +8179,11 @@ a.morelink {
   padding: 45px 40px;
   padding-right: 70px;
   border-radius: 4px;
-  -ms-box-shadow: 0px 30px 50px 0px rgba(1, 11, 60, 0.1);
-  -o-box-shadow: 0px 30px 50px 0px rgba(1, 11, 60, 0.1);
-  box-shadow: 0px 30px 50px 0px rgba(1, 11, 60, 0.1);
   position: relative;
   z-index: 1;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact__info-inner {
-    margin-top: 50px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .contact__info-inner {
-    margin-top: 50px;
-  }
-}
 @media (max-width: 575px) {
   .contact__info-inner {
-    margin-top: 50px;
     padding-right: 35px;
   }
 }
