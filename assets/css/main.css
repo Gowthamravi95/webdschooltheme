@@ -435,6 +435,12 @@ input[type=color] {
   border-color: var(--tp-theme-1);
 }
 
+.hang {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+}
+
 /*--
     - Background color
 -----------------------------------------*/
