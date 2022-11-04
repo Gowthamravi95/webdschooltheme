@@ -1814,6 +1814,10 @@
  .course-meta li {
     display: inline-block;
     margin: 10px 23px;
+    @media #{$lg}{
+    margin: 10px 10px;
+       
+    }
     color: #333333;
     position: relative;
     font-size: 12px;
@@ -1827,6 +1831,11 @@
     content: "";
     right: -30px;
     top: 5px;
+    @media #{$lg}{
+      
+    right: -10px;
+           
+    }
  }
 
  .course-meta.desc li:last-child {
@@ -1852,4 +1861,12 @@
  }
  .swiper-button-prev,.swiper-button-next{
     top: 30% !important;
+ }
+
+ .course-tab{
+    position:sticky;
+    top:30px;
+    background-color: white;
+    padding-top:20px;
+    z-index: 9;
  }

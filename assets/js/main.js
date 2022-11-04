@@ -431,10 +431,6 @@
     });
 
 
-////////////////////////////////////////////////////
-	// 23. Catergory sticky top
-	$(".course-tab").css({"position":"sticky","top":"30px","background-color":"#F7F7F7","padding-top":"20px","z-index":"9"})
-
 
 
 
@@ -450,9 +446,28 @@ setTimeout(function() {
 	
   }, 2000);
 
+// tab scroll into view
 
 
 
+
+const scrollIntoViewWithOffset = () => {
+	window.scrollTo({
+	  behavior: 'smooth',
+	  top:
+		document.querySelector('#course-top').getBoundingClientRect().top - document.body.getBoundingClientRect().top - 240,
+	})
+  }
+
+$('#nav-trending-tab').click(function(e){
+	
+	scrollIntoViewWithOffset()
+
+  })
+  
+  $('#nav-all-tab').click(function(e){
+	scrollIntoViewWithOffset()
+  })
 
 
 
