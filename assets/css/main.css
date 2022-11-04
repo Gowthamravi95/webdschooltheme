@@ -7626,7 +7626,7 @@ a.morelink {
 }
 .testimonial__rating ul li a {
   font-size: 14px;
-  color: var(--tp-common-yellow-4);
+  color: var(--tp-common-yellow-4) !important;
 }
 
 .owl-prev, .owl-next {
