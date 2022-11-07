@@ -103,8 +103,11 @@
                 display: inline-block;
                 margin: 0 0;
                 & a{
-                    font-size: 14px;
-                    color: var(--tp-common-yellow-4) !important;
+                    svg{
+                        fill: var(--tp-common-yellow-4) !important;
+                        width: 1.2em;
+                        height: 1.2em;
+                    }
                 }
             }
         }

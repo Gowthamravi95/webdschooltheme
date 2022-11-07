@@ -108,8 +108,11 @@
                 &:hover{
                     & i{
                         background: var(--tp-theme-1);
-                        color: var(--tp-common-white);
                         border-color: var(--tp-theme-1);
+                        svg{
+                            fill: var(--tp-common-white);
+
+                        }
                     }
                     & a{
                         color: var(--tp-common-black);
@@ -126,6 +129,11 @@
                 text-align: center;
                 border: 1px solid var(--tp-border-1);
                 @include border-radius(7px);
+                svg{
+                    
+                    fill: "#4B535A";
+                   }
+               
             }
         }
         &-text{
@@ -154,15 +162,16 @@
                     display: inline-block;
                     width: 40px;
                     height: 40px;
-                    line-height: 42px;
                     text-align: center;
+
                     background: var(--tp-grey-1);
-                    color: var(--tp-theme-2);
+                    fill: var(--tp-theme-2);
                     @include border-radius(5px);
                     &:hover{
                         background: var(--tp-theme-2);
-                        color: var(--tp-common-white);
+                        fill: var(--tp-common-white);
                     }
+                  
                 }
             }
         }

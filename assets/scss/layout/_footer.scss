@@ -91,14 +91,20 @@
                     line-height: 40px;
                     text-align: center;
                     @include box-shadow(0px 1px 2px rgba(26, 31, 35, 0.1));
-                    color: var(--tp-text-7);
                     @include border-radius(50%);
                     background-color: var(--tp-common-white);
 
                     &:hover{
                         background-color: var(--tp-theme-1);
-                        color: var(--tp-common-white);
+                        svg{
+                            fill: var(--tp-common-white);
+                        }
                     }
+                    svg{
+                       
+                        fill: var(--tp-text-7);
+
+                       }
                 }
             }
         }
@@ -106,6 +112,10 @@
             @media #{$sm, $xs}{
                 margin-top: 30px;
             }
+            svg{
+                       
+                fill: var(--tp-text-body);
+               }
             & ul{
                 & li{
                     & a{
@@ -168,6 +178,10 @@
                     position: relative;
                     padding-right: 15px;
                     margin-right: 15px;
+                    svg{
+                       
+                        fill: var(--tp-text-body);
+                    }
                     &:last-child{
                         margin-right: 0;
                         padding-right: 0;
