@@ -460,8 +460,9 @@ $('#nav-trending-tab').click(function(e){
   })
 
 
-$('img').attr({"loading":"lazy"});
+// $('img').attr({"loading":"lazy","height":"100%","width":"100%"});
 
+$('img').attr({"loading":"lazy"});
 
 
 
