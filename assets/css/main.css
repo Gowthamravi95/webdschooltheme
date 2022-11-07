@@ -7794,7 +7794,7 @@ a.morelink {
 /*----------------------------------------*/
 .price__banner {
   border-radius: 14px;
-  padding: 50px 30px 115px;
+  padding: 50px 30px 148px;
 }
 .price__banner-content h3 {
   font-size: 30px;
@@ -7805,6 +7805,7 @@ a.morelink {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
+  transform: translateX(-50%);
 }
 .price__banner-content p {
   font-size: 16px;
