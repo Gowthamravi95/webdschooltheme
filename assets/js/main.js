@@ -466,5 +466,16 @@ $('img').attr({"loading":"lazy"});
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 })(jQuery);
 
