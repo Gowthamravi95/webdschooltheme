@@ -7794,7 +7794,7 @@ a.morelink {
 /*----------------------------------------*/
 .price__banner {
   border-radius: 14px;
-  padding: 50px 30px 275px;
+  padding: 50px 30px 115px;
 }
 .price__banner-content h3 {
   font-size: 30px;
@@ -7812,6 +7812,17 @@ a.morelink {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 25px;
   padding-right: 50px;
+}
+.price__banner-content h4 {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--tp-common-white);
+}
+.price__banner-content h4 span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.7;
+  font-weight: 400;
 }
 .price__item {
   border: 2px solid rgba(3, 18, 32, 0.06);
@@ -7903,17 +7914,7 @@ a.morelink {
   color: var(--tp-text-13);
 }
 .price__content {
-  padding: 30px 40px 45px;
-}
-.price__amount h4 {
-  font-size: 34px;
-  font-weight: 700;
-}
-.price__amount h4 span {
-  font-size: 16px;
-  color: var(--tp-text-11);
-  opacity: 0.7;
-  font-weight: 400;
+  padding: 45px 40px 0px;
 }
 
 /*----------------------------------------*/

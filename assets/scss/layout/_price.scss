@@ -7,7 +7,7 @@
 .price{
     &__banner{
         @include border-radius(14px);
-        padding: 50px 30px 275px;
+        padding: 50px 30px 115px;
         &-content{
             & h3{
                 font-size: 30px;
@@ -25,6 +25,19 @@
                 color: rgba($color: #fff, $alpha: .8);
                 margin-bottom: 25px;
                 padding-right: 50px;
+            }
+            & h4{
+                font-size: 34px;
+                font-weight: 700;
+                color: var(--tp-common-white);
+    
+                & span{
+                    font-size: 16px;
+                    color: rgba($color: #fff, $alpha: .6);
+
+                    opacity: .7;
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -147,20 +160,8 @@
         }
     }
     &__content{
-        padding: 30px 40px 45px;
+        padding: 45px 40px 0px;
         
     }
-    &__amount{
-        & h4{
-            font-size: 34px;
-            font-weight: 700;
-
-            & span{
-                font-size: 16px;
-                color: var(--tp-text-11);
-                opacity: .7;
-                font-weight: 400;
-            }
-        }
-    }
+   
 }
