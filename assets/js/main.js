@@ -434,17 +434,7 @@
 
 
 
-// setTimout is not necessary
-setTimeout(function() {
-  
-	$('.recaptcha').each(function() {
-	  grecaptcha.render(this.id, {
-		'sitekey': '6LdVkwkUAAAAACeeETRX--v9Js0vWyjQOTIZxxeB',
-		"theme":"light"
-	  });
-	});
-	
-  }, 2000);
+
 
 // tab scroll into view
 
@@ -470,5 +460,10 @@ $('#nav-trending-tab').click(function(e){
   })
 
 
+$('img').attr({"loading":"lazy"});
+
+
+
 
 })(jQuery);
+
