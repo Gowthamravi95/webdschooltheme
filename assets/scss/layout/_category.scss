@@ -222,6 +222,14 @@
         padding-top: 10px;
         padding-bottom: 5px;
         & ul{
+
+            & .pad{
+                visibility: hidden;
+                @media #{$sm, $xs}{
+                    display: none;
+                }
+            }
+
             & li{
                 list-style: none;
                 & a{
