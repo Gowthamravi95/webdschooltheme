@@ -124,5 +124,7 @@
     border:0px solid black;
 }
 .owl-prev { left: -20px; }
-.owl-next { right: -20px; }
-.owl-prev i, .owl-next i {transform : scale(2.5); color: #ccc;}
+.owl-next { right: 0px; }
+.disabled .nav-right,.disabled .nav-left{
+    display: none;
+}

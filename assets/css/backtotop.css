@@ -24,14 +24,13 @@
   
   .progress-wrap::after {
     position: absolute;
-    content: '\f176';
-    font-family: "Font Awesome 5 Pro";
+    content: '\2191';
     text-align: center;
     line-height: 46px;
-    font-size: 20px;
+    font-size: 26px;
     color: #2c3941;
     left: 0;
-    top: 0;
+    top: -3px;
     height: 46px;
     width: 46px;
     cursor: pointer;

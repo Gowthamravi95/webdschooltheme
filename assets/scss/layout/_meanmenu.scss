@@ -55,17 +55,25 @@
 	line-height: 30px;
 	top: 0;
 	font-weight: 400;
+	svg{
+		width: 1.5em;
+		height: 1.5em;
+		transition: all 0.2s ease-in;
+	}
     &:hover{
         background: var(--tp-theme-1);
-        color: var(--tp-common-white);
         border-color: var(--tp-theme-1);
+		svg{
+			fill: var(--tp-common-white);
+
+		}
     }
 }
 
-.mean-container .mean-nav ul li > a > i {
+.mean-container .mean-nav ul li > a > svg {
     display: none;
 }
-.mean-container .mean-nav ul li > a.mean-expand i{
+.mean-container .mean-nav ul li > a.mean-expand svg{
     display: inline-block;
 }
 
@@ -78,7 +86,7 @@
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked{
     color: var(--tp-common-black);
 }
-.mean-container .mean-nav ul li a.mean-expand.mean-clicked i{
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked svg{
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);

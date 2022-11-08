@@ -54,6 +54,12 @@
                     color: var(--tp-theme-2);
                 }
             }
+            svg{
+                width: 1em;
+                height: 1em;
+                margin-top: -1px;
+                fill: var(--tp-text-body);
+            }
         }
         &-2{
             & span{

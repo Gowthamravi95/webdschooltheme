@@ -36,6 +36,7 @@
     &__wrapper{
         position: relative;
         padding: 45px;
+        height: 100vh;
         @media #{$xs}{
            padding: 20px;
         }
@@ -111,7 +112,9 @@
                         border-color: var(--tp-theme-1);
                         svg{
                             fill: var(--tp-common-white);
-
+                            width: 1em;
+                            height: 1em;
+                            margin-top: -1px;
                         }
                     }
                     & a{
@@ -130,7 +133,9 @@
                 border: 1px solid var(--tp-border-1);
                 @include border-radius(7px);
                 svg{
-                    
+                    width: 1em;
+                    height: 1em;
+                    margin-top: -1px;
                     fill: "#4B535A";
                    }
                

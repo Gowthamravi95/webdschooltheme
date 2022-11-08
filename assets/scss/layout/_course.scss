@@ -1870,3 +1870,21 @@
     padding-top:20px;
     z-index: 9;
  }
+ .slick-slider .prev,.slick-slider .next{
+    top: 30% !important;
+    position:absolute;
+    z-index: 9;
+    cursor: pointer;
+ }
+ .slick-slider .next{
+    left: 15px !important;
+
+ }
+ .slick-slider .prev{
+    right: 15px !important;
+
+ }
+
+ .slick-disabled{
+    display: none;
+ }

@@ -156,7 +156,8 @@
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   cursor: auto;
   pointer-events: none;
 }

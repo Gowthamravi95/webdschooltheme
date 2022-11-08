@@ -37,11 +37,12 @@
                 background-color: var(--tp-grey-10);
                 background-image: none;
                 content: '\2b';
-                font-family: var(--tp-ff-fontawesome);
-                font-weight: 500;
+                font-family: var(--tp-ff-body);
+                font-weight: 300;
                 margin: inherit;
                 @include border-radius(50%);
                 @include transition(.3s);
+                font-size: 30px;
             }
         }
 

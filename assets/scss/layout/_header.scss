@@ -337,13 +337,14 @@
 			&.has-dropdown{
 				& > a{
                     &::after{
-                        content:  url();
+                        content:  "\203A";
                         @include transform(translateY(1px));
                         font-size: 14px;
-                        color: var(--tp-common-black);
+                        color: var(--tp-common-black-2);
                         font-weight: 400;
-                        margin-left: 5px;
+                        margin-left: 10px;
                         display: inline-block;
+                        transform: rotate(90deg) scale(2);
                     }
                 }
 			}
@@ -422,7 +423,7 @@
                     &:hover{
                         background-color: #f5f6f8;
                         & > a{
-                            // color: var(--tp-theme-2);
+                            color: var(--tp-theme-2);
                             &::after{
                                 color:  var(--tp-theme-2);
                             }
@@ -442,7 +443,8 @@
 				& > a{
 					color: var(--tp-theme-2);
 					&::after{
-						color: var(--tp-theme-1);
+						color: var(--tp-theme-2);
+                        transform: rotate(270deg) scale(2);
 					}
 				}
 				& > .submenu{
