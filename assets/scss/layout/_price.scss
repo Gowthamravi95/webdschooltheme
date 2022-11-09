@@ -90,8 +90,8 @@
             mix-blend-mode: luminosity;
         }
         & img{
-            mix-blend-mode: luminosity;
-            filter: grayscale(100%);
+            // mix-blend-mode: luminosity;
+            // filter: grayscale(100%);
         }
     }
     &__shape{

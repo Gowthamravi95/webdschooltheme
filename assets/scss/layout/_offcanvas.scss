@@ -36,7 +36,7 @@
     &__wrapper{
         position: relative;
         padding: 45px;
-        height: 100vh;
+        min-height: 100vh;
         @media #{$xs}{
            padding: 20px;
         }
@@ -48,7 +48,7 @@
             height: 45px;
             width: 45px;
             line-height: 46px;
-            background: var(--tp-theme-1);
+            background: var(--tp-theme-2);
             color: #fff;
             border-radius: 50%;
             &:hover{
@@ -108,8 +108,8 @@
                 }
                 &:hover{
                     & i{
-                        background: var(--tp-theme-1);
-                        border-color: var(--tp-theme-1);
+                        background: var(--tp-theme-2);
+                        border-color: var(--tp-theme-2);
                         svg{
                             fill: var(--tp-common-white);
                             width: 1em;

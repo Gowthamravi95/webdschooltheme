@@ -40,7 +40,7 @@ a.meanmenu-reveal {
 	font-size: 1px;
 	display: block;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 
 .mean-container a.meanmenu-reveal span {
@@ -80,7 +80,7 @@ a.meanmenu-reveal {
 	color: #fff;
 	border-top: 1px solid #e0e3ed;
 	text-decoration: none;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .mean-container .mean-nav ul li li a {

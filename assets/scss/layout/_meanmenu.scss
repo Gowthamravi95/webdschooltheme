@@ -36,9 +36,9 @@
 	border-top: 1px solid #ebebeb;
 	font-size: 14px;
     line-height: 1.5;
-    font-weight: 700;
+    // font-weight: 700;
     &:hover{
-        color: var(--tp-theme-1);
+        color: var(--tp-theme-2);
     }
 }
 
@@ -61,8 +61,8 @@
 		transition: all 0.2s ease-in;
 	}
     &:hover{
-        background: var(--tp-theme-1);
-        border-color: var(--tp-theme-1);
+        background: var(--tp-theme-2);
+        border-color: var(--tp-theme-2);
 		svg{
 			fill: var(--tp-common-white);
 

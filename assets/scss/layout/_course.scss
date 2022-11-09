@@ -1865,9 +1865,32 @@
 
  .course-tab{
     position:sticky;
-    top:30px;
+    @media #{$xl}{
+        top:-56px;
+    
+        }
+    @media #{$lg}{
+    top:-56px;
+
+    }
+    @media #{$md}{
+    top: -10px;
+
+    }
+    @media #{$sm}{
+    top:-65px;
+
+    }
+    @media #{$xs}{
+    top:12px;
+       
+    }
+    @media screen and (max-width:381px) {
+    top: -15px !important;
+        
+    }
     background-color: white;
-    padding-top:20px;
+    // padding-top:20px;
     z-index: 9;
  }
  .slick-slider .prev,.slick-slider .next{
