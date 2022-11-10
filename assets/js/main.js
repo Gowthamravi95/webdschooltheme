@@ -193,7 +193,7 @@
 		items: 4,
 		navText: ['<button class="nav-left"><span class="next"><svg style="background-color: black; border-radius: 50%;"  enable-background="new 0 0 32 32" height="32px"  version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Chevron_Left_Circle"><path d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.163,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z    M16,30.031C8.28,30.031,2,23.72,2,16C2,8.28,8.28,2,16,2c7.72,0,14,6.28,14,14C30,23.72,23.72,30.031,16,30.031z" fill="#ed8621"/><path d="M19.607,8.302c-0.391-0.394-1.024-0.394-1.414,0l-6.9,6.999c-0.38,0.384-0.381,1.044,0,1.429l6.899,6.999   c0.391,0.394,1.024,0.394,1.414,0c0.391-0.395,0.391-1.034,0-1.429l-6.195-6.285l6.196-6.285   C19.997,9.336,19.997,8.697,19.607,8.302z" fill="#ed8621"/></g><g/><g/><g/><g/><g/><g/></svg></span></button>', '<button class="nav-right"><svg style="background-color: black; border-radius: 50%;" enable-background="new 0 0 32 32" height="32px"  version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Chevron_Right_Circle"><path d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16c8.836,0,16-7.164,16-16C32,7.163,24.836,0,16,0z M16,30   C8.28,30,2,23.72,2,16C2,8.28,8.28,1.969,16,1.969c7.72,0,14,6.311,14,14.031C30,23.72,23.72,30,16,30z" fill="#ed8621"/><path d="M13.808,8.271c-0.391-0.394-1.024-0.394-1.414,0c-0.391,0.395-0.391,1.034,0,1.429l6.195,6.285   l-6.196,6.285c-0.391,0.394-0.391,1.034,0,1.429c0.391,0.394,1.024,0.394,1.414,0l6.9-6.999c0.38-0.385,0.381-1.044,0-1.429   L13.808,8.271z" fill="#ed8621"/></g><g/><g/><g/><g/><g/><g/></svg></button>'],
 		nav: true,
-		dots: true,
+		dots: false,
 		slideTransition: 'fadeOutLeft',
 		smartSpeed: 300,
 		responsive: {
@@ -228,10 +228,7 @@
 				slidesPerView: 1,
 			},
 		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
+		
 		// Navigation arrows
 		navigation: {
 			nextEl: ".swiper-button-next",
@@ -408,6 +405,7 @@
         speed: 800,
         slidesToShow: 3,
         slidesToScroll: 1,
+
         responsive: [
             {
               breakpoint: 992,
@@ -430,7 +428,40 @@
         ]
     });
 
+	$('.blog-active-sw').slick({
+		dots: false,
+        infinite: false,
+        // arrows: true,
+        prevArrow: '<span class="next"><svg style="background-color: rgba(26,26,26,1); border-radius: 50%;"  enable-background="new 0 0 32 32" height="32px"  version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Chevron_Left_Circle"><path d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.163,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z    M16,30.031C8.28,30.031,2,23.72,2,16C2,8.28,8.28,2,16,2c7.72,0,14,6.28,14,14C30,23.72,23.72,30.031,16,30.031z" fill="#ed8621"/><path d="M19.607,8.302c-0.391-0.394-1.024-0.394-1.414,0l-6.9,6.999c-0.38,0.384-0.381,1.044,0,1.429l6.899,6.999   c0.391,0.394,1.024,0.394,1.414,0c0.391-0.395,0.391-1.034,0-1.429l-6.195-6.285l6.196-6.285   C19.997,9.336,19.997,8.697,19.607,8.302z" fill="#ed8621"/></g><g/><g/><g/><g/><g/><g/></svg></span>',
+        nextArrow:'<span class="prev"><svg style="background-color: rgba(26,26,26,1); border-radius: 50%;" enable-background="new 0 0 32 32" height="32px"  version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Chevron_Right_Circle"><path d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16c8.836,0,16-7.164,16-16C32,7.163,24.836,0,16,0z M16,30   C8.28,30,2,23.72,2,16C2,8.28,8.28,1.969,16,1.969c7.72,0,14,6.311,14,14.031C30,23.72,23.72,30,16,30z" fill="#ed8621"/><path d="M13.808,8.271c-0.391-0.394-1.024-0.394-1.414,0c-0.391,0.395-0.391,1.034,0,1.429l6.195,6.285   l-6.196,6.285c-0.391,0.394-0.391,1.034,0,1.429c0.391,0.394,1.024,0.394,1.414,0l6.9-6.999c0.38-0.385,0.381-1.044,0-1.429   L13.808,8.271z" fill="#ed8621"/></g><g/><g/><g/><g/><g/><g/></svg></span>',
+        // autoplay: true,
+        speed: 800,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+		variableWidth: true,
 
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+        ]
+
+    });
 
 
 

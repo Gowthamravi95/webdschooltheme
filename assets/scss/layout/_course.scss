@@ -1894,7 +1894,7 @@
     z-index: 9;
  }
  .slick-slider .prev,.slick-slider .next{
-    top: 30% !important;
+    top: 30% ;
     position:absolute;
     z-index: 9;
     cursor: pointer;
@@ -1909,5 +1909,10 @@
  }
 
  .slick-disabled{
-    display: none;
+    display: none !important;
  }
+
+ .blog-active-sw .prev, .blog-active-sw  .next{
+        top: 58% !important;
+     }
+ 

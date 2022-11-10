@@ -13,7 +13,7 @@
         }
     }
     &__item{
-        padding: 40px 40px 15px;
+        padding: 40px 40px 0px;
 
         @media #{$lg, $xs}{
             padding-left: 30px;
