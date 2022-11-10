@@ -54,3 +54,9 @@
     transition: all 200ms linear;
   }
   
+@media screen and (max-width:576px) {
+.progress-wrap {
+  bottom: 0px;
+  right: 0px;
+}
+}
