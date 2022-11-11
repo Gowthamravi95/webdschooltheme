@@ -44,15 +44,6 @@
 	});
 
 
-	////////////////////////////////////////////////////
-	// 05. Search Js
-	$(".search-toggle").on("click", function () {
-		$(".search__area").addClass("opened");
-	});
-	$(".search-close-btn").on("click", function () {
-		$(".search__area").removeClass("opened");
-	});
-
 
 	////////////////////////////////////////////////////
 	// 06. Sticky Header Js
@@ -85,32 +76,7 @@
 	
 	////////////////////////////////////////////////////
 	// 13. Masonary Js
-	$('.grid').imagesLoaded(function () {
-		// init Isotope
-		var $grid = $('.grid').isotope({
-			itemSelector: '.grid-item',
-			percentPosition: true,
-			masonry: {
-				// use outer width of grid-sizer for columnWidth
-				columnWidth: 1,
-			}
-		});
 
-
-		// filter items on button click
-		$('.masonary-menu').on('click', 'button', function () {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
-		});
-
-		//for menu active class
-		$('.masonary-menu button').on('click', function (event) {
-			$(this).siblings('.active').removeClass('active');
-			$(this).addClass('active');
-			event.preventDefault();
-		});
-
-	});
 
 	/* magnificPopup img view */
 	$('.popup-image').magnificPopup({
@@ -125,68 +91,7 @@
 		type: "iframe",
 	});
 
-	////////////////////////////////////////////////////
-	// 14. Wow Js
-	new WOW().init();
-
-	////////////////////////////////////////////////////
-	// 16. Cart Quantity Js
-	$('.cart-minus').click(function () {
-		var $input = $(this).parent().find('input');
-		var count = parseInt($input.val()) - 1;
-		count = count < 1 ? 1 : count;
-		$input.val(count);
-		$input.change();
-		return false;
-	});
-	$('.cart-plus').click(function () {
-		var $input = $(this).parent().find('input');
-		$input.val(parseInt($input.val()) + 1);
-		$input.change();
-		return false;
-	});
-
-	$(".cart-plus-minus").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
-	$(".qtybutton").on("click", function () {
-		var $button = $(this);
-		var oldValue = $button.parent().find("input").val();
-		if ($button.text() == "+") {
-			var newVal = parseFloat(oldValue) + 1;
-		} else {
-			// Don't allow decrementing below zero
-			if (oldValue > 0) {
-				var newVal = parseFloat(oldValue) - 1;
-			} else {
-				newVal = 0;
-			}
-		}
-		$button.parent().find("input").val(newVal);
-	});
-
-	////////////////////////////////////////////////////
-	// 17. Show Login Toggle Js
-	$('#showlogin').on('click', function () {
-		$('#checkout-login').slideToggle(900);
-	});
-
-	////////////////////////////////////////////////////
-	// 18. Show Coupon Toggle Js
-	$('#showcoupon').on('click', function () {
-		$('#checkout_coupon').slideToggle(900);
-	});
-
-	////////////////////////////////////////////////////
-	// 19. Create An Account Toggle Js
-	$('#cbox').on('click', function () {
-		$('#cbox_info').slideToggle(900);
-	});
-
-	////////////////////////////////////////////////////
-	// 20. Shipping Box Toggle Js
-	$('#ship-box').on('click', function () {
-		$('#ship-box-info').slideToggle(1000);
-	});
-
+	
 	////////////////////////////////////////////////////
 	// 21. Counter Js
 	$('.counter').counterUp({
@@ -194,14 +99,7 @@
 		time: 500,
 	});
 
-	////////////////////////////////////////////////////
-	// 22. Parallax Js
-	if ($('.scene').length > 0) {
-		$('.scene').parallax({
-			scalarX: 10.0,
-			scalarY: 15.0,
-		});
-	};
+
 
 	////////////////////////////////////////////////////
 	// 23. InHover Active Js

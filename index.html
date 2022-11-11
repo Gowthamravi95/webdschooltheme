@@ -2586,6 +2586,23 @@
 
    <script src="./assets/js/vendor/jquery.js"></script>
    <script src="assets/js/vendor/waypoints.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script>
+   	$('.grid').imagesLoaded(function () {
+		// init Isotope
+		var $grid = $('.grid').isotope({
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+				// use outer width of grid-sizer for columnWidth
+				columnWidth: 1,
+			}
+		});
+
+
+	});
+</script>
    <script src="assets/js/bootstrap-bundle.js"></script>
    <script src="assets/js/meanmenu.js"></script>
    <script src="assets/js/swiper-bundle.js"></script>
@@ -2596,12 +2613,12 @@
    <script src="assets/js/nice-select.js"></script>
    <script src="assets/js/counterup.js"></script>
    <script src="assets/js/wow.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   
    <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/slick.min.js"></script>
    <script src="assets/js/main.js"></script>
    <script src="assets/js/moretext.js"></script>
+   <script src="./assets/js/grid.js"></script>
 
 
 
