@@ -1,3 +1,7 @@
+@use '../utils' as *;
+
+
+
 a.morelink svg{
     fill: lightskyblue;
     position: relative;
@@ -51,7 +55,8 @@ a.morelink {
 
 .moreStyle {
     overflow: none;
-    max-height: 1000px;
+    max-height: 1800px !important;
+   
 
 }
 

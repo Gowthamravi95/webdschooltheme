@@ -131,4 +131,22 @@
     }
 }
 
+.test-dc{
+    @media #{$md}{
+        width: 80%;
+       
+    }
+    @media #{$lg}{
+        width: 70%;
+       
+    }
+    @media #{$xl}{
+        width: 60%;
+       
+    }
+    @media #{$xxl}{
+        width: 50%;
+       
+    }
+}
 

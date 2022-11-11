@@ -1,3 +1,8 @@
+
+
+@use '../utils' as *;
+
+
 .video_wrapper {
     width: 100%;
     float: left;
@@ -25,10 +30,11 @@
  .video_player_wrapper ul {
     display: inline-block;
     position: absolute;
-    top: 43%;
+    top: 50%;
     left: 0;
     right: 0;
     margin: 0px auto;
+    transform: translateY(-50%);
  }
 
  .video_player_wrapper li {
@@ -69,3 +75,9 @@
     }
  }
 
+.play-btn{
+   @media #{$xs}{
+    transform: scale(0.7);
+     
+  }
+}
