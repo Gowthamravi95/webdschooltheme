@@ -8,6 +8,7 @@
     &__banner{
         @include border-radius(14px);
         padding: 50px 30px 148px;
+        background-color: #77acd6;
         @media #{$lg}{
         padding: 50px 30px 168px;
            
