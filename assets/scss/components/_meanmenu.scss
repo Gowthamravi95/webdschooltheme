@@ -1,4 +1,8 @@
 
+@use '../utils' as *;
+
+
+
 a.meanmenu-reveal {
 	display: none;
 }
@@ -6,7 +10,8 @@ a.meanmenu-reveal {
 
 .mean-container .mean-bar {
 	float: left;
-	width: 100%;
+	@extend .width-100;
+
 	position: relative;
 	background: #070337;
 	padding: 4px 0;
@@ -42,7 +47,7 @@ a.meanmenu-reveal {
 
 .mean-container .mean-nav {
 	float: left;
-	width: 100%;
+	@extend .width-100;
 	background: #070337;
 	margin-top: 44px;
 }

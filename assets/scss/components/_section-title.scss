@@ -21,7 +21,7 @@
             margin-bottom: 8px;
             color: var(--tp-common-black-4);
             &-30{
-                font-size: 30px;
+                @extend .font-size-30px;
             }
 
             @media #{$xs}{
@@ -34,7 +34,8 @@
             margin-bottom: 8px;
             color: var(--tp-common-black);
             &-30{
-                font-size: 30px;
+                @extend .font-size-30px;
+
             }
 
             @media #{$xs}{
@@ -62,7 +63,8 @@
             }
         }
         &-30{
-            font-size: 30px;
+            @extend .font-size-30px;
+
         }
         &-pre{
             font-size: 16px;
